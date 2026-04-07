@@ -88,7 +88,7 @@ cards.forEach(card => {
 const heroButton = document.querySelector('.hero-button');
 if (heroButton) {
   heroButton.addEventListener('click', () => {
-    alert('Start planning your trip to Da Nang! This would typically open a booking or planning interface.');
+    alert('Bắt đầu lên kế hoạch cho chuyến đi của bạn đến Đà Nạng! Thường thì điều này sẽ mở giao diện đặt phòng hoặc lên kế hoạch.');
   });
 }
 
