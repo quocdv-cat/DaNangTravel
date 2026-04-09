@@ -1,0 +1,22 @@
+@media (max-width: 992px) {
+    .hero-content h1 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    
+    .nav-menu {
+        position: fixed; top: 70px; left: -100%;
+        flex-direction: column; width: 100%; height: calc(100vh - 70px);
+        background-color: var(--bg-light); transition: var(--transition);
+        padding-top: 40px;
+    }
+    
+    .nav-menu.active { left: 0; }
+    .nav-list { flex-direction: column; align-items: center; gap: 30px; }
+    
+    .footer-content { flex-direction: column; gap: 30px; text-align: center; }
+    .hero-content h1 { font-size: 2.5rem; }
+    
+    .prev-lightbox, .next-lightbox { padding: 10px; font-size: 16px; }
+}

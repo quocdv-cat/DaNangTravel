@@ -1,94 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Du lịch Đà Nạng</title>
-        <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá Đà Nẵng - Thành phố đáng sống nhất Việt Nam. Trải nghiệm du lịch tuyệt vời.">
+    <title>Đà Nẵng Travel | Khám Phá Thành Phố Biển</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+    </div>
 
-    <body>
-        <!-- Header -->
-        <header class="header" id="header">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="#home"><img src="images/logo.png" alt="Logo"></a>
-                </div>
-                <ul class="nav-menu">
-                    <li>
-                        <a href="#destinations" class="nav-link">Địa điểm du lịch</a>
-                    </li>
-                    <li>
-                        <a href="#cuisine" class="nav-link">Ẩm thực</a>
-                    </li>
-                    <li>
-                        <a href="#festivals" class="nav-link">Lễ hội</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="nav-link">Liên hệ</a>
-                    </li>
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="pages/destinations.html" class="nav-link" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="pages/cuisine.html" class="nav-link" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="pages/festival.html" class="nav-link" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="pages/contact.html" class="nav-link" data-i18n="contact">Liên hệ</a></li>
                 </ul>
-            </nav>
-        </header>
+                <div class="nav-actions">
+                    <button id="lang-toggle" class="btn-icon">VI | EN</button>
+                    <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
+                    <button id="fav-btn" class="btn-icon"><i class="fa-solid fa-heart"></i> <span id="fav-count">0</span></button>
+                </div>
+            </div>
 
-        <main class="main-content">
-        </main>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-        <!-- Footer -->
-        <footer class="footer" id="contact">
-            <div class="container">
-                <div class="footer-grid">
-                    <!-- About -->
-                    <div class="footer-column">
-                        <h3 class="footer-heading">Du lịch Đà Nẵng</h3>
-                        <p class="footer-text">Cánh cửa để bạn khám phá vẻ đẹp và văn hóa của thành phố năng động nhất miền Trung Việt Nam.</p>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="footer-column">
-                        <h4 class="footer-subheading">Liên kết nhanh</h4>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#home">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="#destinations">Điểm đến</a>
-                            </li>
-                            <li>
-                                <a href="#cuisine">Ẩm thực</a>
-                            </li>
-                            <li>
-                                <a href="#festivals">Lễ hội</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Connect -->
-                    <div class="footer-column">
-                        <h4 class="footer-subheading">Liên hệ với chúng tôi</h4>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social-icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <p class="footer-contact">
-                            Email: info@exploredanang.com<br>
-                            Điện thoại: +84 236 3555 555
-                        </p>
+    <main>
+        <section class="hero">
+            <div class="slider" id="hero-slider">
+                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="hero-content">
+                        <h1 data-i18n="hero_title">Khám Phá Đà Nẵng</h1>
+                        <p data-i18n="hero_desc">Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp và con người thân thiện.</p>
+                        <a href="pages/destinations.html" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
                     </div>
                 </div>
-                    <!-- Copyright at bottom -->
-                    <div class="footer-copyright">
-                        <p>&copy; 2026 Explore Da Nang. All rights reserved.</p>
-                    </div>
+                </div>
+            <div class="slider-controls">
+                <button id="prev-slide"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next-slide"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
-        </footer>
+        </section>
 
-        <script src="js/script.js"></script>
-    </body>
+        <section class="intro container fade-in">
+            <h2 class="section-title" data-i18n="why_danang">Vì sao chọn Đà Nẵng?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <h3 data-i18n="beautiful_beach">Biển xanh cát trắng</h3>
+                    <p data-i18n="beach_desc">Sở hữu những bãi biển quyến rũ nhất hành tinh.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3 data-i18n="tasty_food">Ẩm thực phong phú</h3>
+                    <p data-i18n="food_desc">Thưởng thức hương vị miền Trung đậm đà khó quên.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h3 data-i18n="easy_travel">Di chuyển dễ dàng</h3>
+                    <p data-i18n="travel_desc">Hạ tầng giao thông hiện đại, kết nối thuận tiện.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Danang<span>Travel</span></h3>
+                <p>Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="quick_links">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="pages/destinations.html">Địa điểm</a></li>
+                    <li><a href="pages/cuisine.html">Ẩm thực</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="connect">Kết nối</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Danang Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
 </html>
