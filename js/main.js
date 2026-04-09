@@ -21,31 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. Header Sticky & Back to Top
-    const header = document.getElementById('header');
-    const backToTopBtn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
-            if(backToTopBtn) backToTopBtn.style.display = 'block';
-        } else {
-            header.style.boxShadow = 'var(--shadow)';
-            if(backToTopBtn) backToTopBtn.style.display = 'none';
-        }
-        
-        // Scroll fade-in effect
-        document.querySelectorAll('.fade-in').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                el.classList.add('visible');
-            }
-        });
-    });
+    const header = document.querySelector('header');
+            const backToTop = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+                    header.style.padding = '0';
+                } else {
+                    header.style.boxShadow = 'none';
+                }
+                
+                if (window.scrollY > 500) backToTop.classList.add('show');
+                else backToTop.classList.remove('show');
+            });
 
-    if(backToTopBtn) {
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    }
+            backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
 
     // 4. Dark Mode Toggle (Lưu LocalStorage)
     const themeBtn = document.getElementById('theme-toggle');
@@ -73,7 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
             festivals: "Lễ hội", contact: "Liên hệ", hero_title: "Khám Phá Đà Nẵng",
             hero_desc: "Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp.",
             explore_now: "Khám phá ngay", why_danang: "Vì sao chọn Đà Nẵng?",
-            beautiful_beach: "Biển xanh cát trắng", read_more: "Xem chi tiết",
+            beautiful_beach: "Biển xanh cát trắng",
+            beach_desc: "Sở hữu những bãi biển quyến rũ nhất hành tinh.",
+            tasty_food: "Ẩm thực phong phú",
+            food_desc: "Thưởng thức hương vị miền Trung đậm đà khó quên.",
+            easy_travel: "Di chuyển dễ dàng",
+            travel_desc: "Hạ tầng giao thông hiện đại, kết nối thuận tiện.",
+            read_more: "Xem chi tiết",
             destinations_title: "Các Địa Điểm Nổi Bật", no_result: "Không tìm thấy địa điểm phù hợp."
         },
         en: {
@@ -81,7 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
             festivals: "Festivals", contact: "Contact", hero_title: "Explore Da Nang",
             hero_desc: "The most livable city in Vietnam with stunning beaches.",
             explore_now: "Explore Now", why_danang: "Why choose Da Nang?",
-            beautiful_beach: "White sandy beaches", read_more: "Read More",
+            beautiful_beach: "White sandy beaches", 
+            beach_desc: "Features the most stunning beaches on the planet.",
+            tasty_food: "Diverse cuisine",
+            food_desc: "Experience the distinctive flavors of the Central region.",
+            easy_travel: "Easy travel",
+            travel_desc: "Modern transportation infrastructure, convenient connections.",
+            read_more: "Read More",
             destinations_title: "Top Destinations", no_result: "No destinations found."
         }
     };
