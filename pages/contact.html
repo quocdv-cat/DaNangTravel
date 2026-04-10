@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Đà Nẵng Travel">
+    <title>Liên Hệ | Đà Nẵng Travel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/i18n.js"></script>
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="destinations.html" class="nav-link" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="cuisine.html" class="nav-link" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="festival.html" class="nav-link" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="contact.html" class="nav-link active" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <select id="lang-toggle" class="lang-select">
+                        <option value="vi">VI</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1 data-i18n="contact_title">Liên Hệ</h1>
+            <p data-i18n="contact_desc">Hãy liên hệ với chúng tôi để có thông tin chi tiết và hỗ trợ</p>
+        </section>
+
+        <section class="contact-section container fade-in">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Gửi tin nhắn cho chúng tôi</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" data-i18n="name" required placeholder="Nhập họ tên của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">Email</label>
+                            <input type="email" id="email" name="email" data-i18n="email" required placeholder="Nhập email của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-i18n="phone">Điện thoại</label>
+                            <input type="tel" id="phone" name="phone" data-i18n="phone" placeholder="Nhập số điện thoại">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">Tin nhắn</label>
+                            <textarea id="message" name="message" data-i18n="message" rows="5" required placeholder="Nhập tin nhắn của bạn"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-i18n="send">Gửi</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="info-section">
+                        <h2 data-i18n="address">Bản đồ du lịch Đà Nẵng</h2>
+                        <div class="map-placeholder">
+                            <img src="../images/contacts/maps.jpg" alt="Map Placeholder">
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Thông tin liên hệ</h2>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <p data-i18n="phone">Điện thoại</p>
+                                <p>+84 236 3555 555</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p>Email</p>
+                                <p data-i18n="email_info">info@exploredanang.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2 data-i18n="follow_us">Theo dõi chúng tôi</h2>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Danang<span>Travel</span></h3>
+                <p data-i18n="footer_desc">Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="quick_links">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="destinations.html" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="cuisine.html" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="festival.html" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="connect">Kết nối</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="footer-contact">
+                    <span data-i18n="email">Email</span>: info@exploredanang.com<br>
+                    <span data-i18n="phone">Điện thoại</span>: +84 236 3555 555
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="all_rights">&copy; 2026 DaNang Travel. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Handle contact form submission (demo)
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ phản hồi sớm.\n\nThank you for your message! We will respond soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

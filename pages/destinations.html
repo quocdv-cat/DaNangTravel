@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các địa điểm du lịch nổi bật tại Đà Nẵng">
+    <title>Địa Điểm | Đà Nẵng Travel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../js/i18n.js"></script>
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="destinations.html" class="nav-link active" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="cuisine.html" class="nav-link" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="festival.html" class="nav-link" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <select id="lang-toggle" class="lang-select">
+                        <option value="vi">VI</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destinations-hero">
+            <h1 data-i18n="destinations_title">Các Địa Điểm Nổi Bật</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" data-i18n="search_placeholder" placeholder="Tìm kiếm địa điểm...">
+                <i class="fa-solid fa-search"></i>
+            </div>
+        </section>
+
+        <section class="destinations container fade-in">
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Marble Mountains -->
+                <div class="destination-card" data-name="Ngũ Hành Sơn" data-id="marble">
+                    <div class="card-image">
+                        <img src="../images/destinations/ngu-hanh-son.png" alt="Marble Mountains">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="marble_mountains">Ngũ Hành Sơn</h3>
+                        <p data-i18n="marble_desc">Một trong những danh lam thắng cảnh nổi tiếng nhất Đà Nẵng với 5 quả núi đá vôi tuyệt đẹp.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Golden Bridge -->
+                <div class="destination-card" data-name="Cầu Vàng" data-id="golden">
+                    <div class="card-image">
+                        <img src="../images/destinations/cau-vang.png" alt="Golden Bridge">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="golden_bridge">Cầu Vàng</h3>
+                        <p data-i18n="golden_desc">Một trong những cây cầu độc đáo nhất thế giới, được xây dựng tại độ cao 1400m trên Fansipan.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Sa Pa, Lào Cai</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Han Market -->
+                <div class="destination-card" data-name="Chợ Hàn" data-id="market">
+                    <div class="card-image">
+                        <img src="../images/destinations/cho-han.jpg" alt="Han Market">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="han_market">Chợ Hàn</h3>
+                        <p data-i18n="han_desc">Chợ truyền thống với đa dạng các sản phẩm địa phương và đồ lưu niệm độc đáo.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- My Khe Beach -->
+                <div class="destination-card" data-name="Bãi Biển Mỹ Khê" data-id="beach">
+                    <div class="card-image">
+                        <img src="../images/destinations/Quang-canh-bien-My-Khe.png" alt="My Khe Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="my_khe_beach">Bãi Biển Mỹ Khê</h3>
+                        <p data-i18n="myKhe_desc">Bãi biển dài nhất Đà Nẵng với cát trắng mịn và nước xanh trong suốt.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Ngũ Hành Sơn, Đà Nẵng</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Dragon Bridge -->
+                <div class="destination-card" data-name="Cầu Rồng" data-id="dragon">
+                    <div class="card-image">
+                        <img src="../images/destinations/cau-rong.png" alt="Dragon Bridge">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="dragon_bridge">Cầu Rồng</h3>
+                        <p data-i18n="dragon_desc">Biểu tượng của thành phố Đà Nẵng với kiến trúc độc đáo hình con rồng.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Ba Na Hills -->
+                <div class="destination-card" data-name="Bà Nà Hills" data-id="bana">
+                    <div class="card-image">
+                        <img src="../images/destinations/ba-na-hills.png" alt="Ba Na Hills">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="ba_na_hills">Bà Nà Hills</h3>
+                        <p data-i18n="bana_desc">Một điểm du lịch tuyệt vời với khí hậu mát mẻ, công viên giải trí và quần áo truyền thống.</p>
+                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hòa Vang, Đà Nẵng</p>
+                        <button class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="no-result-msg" class="no-result-msg hidden" data-i18n="no_result">
+                Không tìm thấy địa điểm phù hợp.
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Danang<span>Travel</span></h3>
+                <p data-i18n="footer_desc">Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="quick_links">Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="destinations.html" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="cuisine.html" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="festival.html" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="connect">Kết nối</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="footer-contact">
+                    <span data-i18n="email">Email</span>: info@exploredanang.com<br>
+                    <span data-i18n="phone">Điện thoại</span>: +84 236 3555 555
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="all_rights">&copy; 2026 DaNang Travel. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

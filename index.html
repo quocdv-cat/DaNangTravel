@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css"> -->
+    <script src="js/i18n.js"></script>
 </head>
 <body>
     <div id="loader" class="loader-container">
@@ -30,8 +30,10 @@
                     <li><a href="pages/contact.html" class="nav-link" data-i18n="contact">Liên hệ</a></li>
                 </ul>
                 <div class="nav-actions">
-                    <button id="lang-toggle" class="btn-icon">VI | EN</button>
-                    <button id="fav-btn" class="btn-icon"><i class="fa-solid fa-heart"></i> <span id="fav-count">0</span></button>
+                    <select id="lang-toggle" class="lang-select">
+                        <option value="vi">VI</option>
+                        <option value="en">EN</option>
+                    </select>
                 </div>
             </div>
 
@@ -44,14 +46,23 @@
     <main>
         <section class="hero">
             <div class="slider" id="hero-slider">
-                <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1920&q=80');">
+                <div class="slide active" style="background-image: url('images/destinations/cau-vang.png');">
                     <div class="hero-content">
                         <h1 data-i18n="hero_title">Khám Phá Đà Nẵng</h1>
                         <p data-i18n="hero_desc">Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp và con người thân thiện.</p>
                         <a href="pages/destinations.html" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
                     </div>
                 </div>
+
+                <div class="slide" style="background-image: url('images/destinations/Quang-canh-bien-My-Khe.png');">
+                    <div class="hero-content">
+                        <h1 data-i18n="hero_title_2">Biển Xanh Cát Trắng</h1>
+                        <p data-i18n="hero_desc_2">Sở hữu những bãi biển quyến rũ nhất hành tinh do Forbes bình chọn.</p>
+                        <a href="pages/destinations.html" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
+                    </div>
                 </div>
+            </div>
+
             <div class="slider-controls">
                 <button id="prev-slide"><i class="fa-solid fa-chevron-left"></i></button>
                 <button id="next-slide"><i class="fa-solid fa-chevron-right"></i></button>
@@ -84,15 +95,15 @@
         <div class="container footer-content">
             <div class="footer-col">
                 <h3>Danang<span>Travel</span></h3>
-                <p>Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
+                <p data-i18n="footer_desc">Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="quick_links">Liên kết nhanh</h4>
                 <ul>
-                    <li><a href="pages/destinations.html">Địa điểm</a></li>
-                    <li><a href="pages/cuisine.html">Ẩm thực</a></li>
-                    <li><a href="pages/festivals.html">Lễ hội</a></li>
-                    <li><a href="pages/contact.html">Liên hệ</a></li>
+                    <li><a href="pages/destinations.html" data-i18n="destinations">Địa điểm</a></li>
+                    <li><a href="pages/cuisine.html" data-i18n="cuisine">Ẩm thực</a></li>
+                    <li><a href="pages/festival.html" data-i18n="festivals">Lễ hội</a></li>
+                    <li><a href="pages/contact.html" data-i18n="contact">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -102,13 +113,13 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <p class="footer-contact">
-                    Email: info@exploredanang.com<br>
-                    Điện thoại: +84 236 3555 555
+                    <span data-i18n="email">Email</span>: info@exploredanang.com<br>
+                    <span data-i18n="phone">Điện thoại</span>: +84 236 3555 555
                 </p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Danang Travel. All rights reserved.</p>
+            <p data-i18n="all_rights">&copy; 2026 DaNang Travel. Tất cả các quyền được bảo lưu.</p>
         </div>
     </footer>
 

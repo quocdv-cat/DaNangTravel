@@ -37,59 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
 
-    // 4. Ngôn ngữ (i18n) & LocalStorage
-    const langBtn = document.getElementById('lang-toggle');
-    const translations = {
-        vi: {
-            home: "Trang chủ", destinations: "Địa điểm", cuisine: "Ẩm thực",
-            festivals: "Lễ hội", contact: "Liên hệ", hero_title: "Khám Phá Đà Nẵng",
-            hero_desc: "Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp.",
-            explore_now: "Khám phá ngay", why_danang: "Vì sao chọn Đà Nẵng?",
-            beautiful_beach: "Biển xanh cát trắng",
-            beach_desc: "Sở hữu những bãi biển quyến rũ nhất hành tinh.",
-            tasty_food: "Ẩm thực phong phú",
-            food_desc: "Thưởng thức hương vị miền Trung đậm đà khó quên.",
-            easy_travel: "Di chuyển dễ dàng",
-            travel_desc: "Hạ tầng giao thông hiện đại, kết nối thuận tiện.",
-            read_more: "Xem chi tiết",
-            destinations_title: "Các Địa Điểm Nổi Bật", no_result: "Không tìm thấy địa điểm phù hợp."
-        },
-        en: {
-            home: "Home", destinations: "Destinations", cuisine: "Cuisine",
-            festivals: "Festivals", contact: "Contact", hero_title: "Explore Da Nang",
-            hero_desc: "The most livable city in Vietnam with stunning beaches.",
-            explore_now: "Explore Now", why_danang: "Why choose Da Nang?",
-            beautiful_beach: "White sandy beaches", 
-            beach_desc: "Features the most stunning beaches on the planet.",
-            tasty_food: "Diverse cuisine",
-            food_desc: "Experience the distinctive flavors of the Central region.",
-            easy_travel: "Easy travel",
-            travel_desc: "Modern transportation infrastructure, convenient connections.",
-            read_more: "Read More",
-            destinations_title: "Top Destinations", no_result: "No destinations found."
-        }
-    };
-    
-    let currentLang = localStorage.getItem('lang') || 'vi';
-    
-    const updateLanguage = (lang) => {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
-            }
-        });
-    };
+    // 4. Language Toggle & i18n
+    const langToggle = document.getElementById('lang-toggle');
 
-    updateLanguage(currentLang);
-    if(langBtn) langBtn.textContent = currentLang === 'vi' ? 'VI | EN' : 'EN | VI';
+    if (langToggle) {
+        // Set initial selected value
+        langToggle.value = currentLang;
 
-    if (langBtn) {
-        langBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'vi' ? 'en' : 'vi';
-            localStorage.setItem('lang', currentLang);
-            updateLanguage(currentLang);
-            langBtn.textContent = currentLang === 'vi' ? 'VI | EN' : 'EN | VI';
+        langToggle.addEventListener('change', (e) => {
+            const newLang = e.target.value;
+            updateLanguage(newLang);
         });
     }
 
