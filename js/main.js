@@ -37,25 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
 
-    // 4. Dark Mode Toggle (Lưu LocalStorage)
-    const themeBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-    let isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    if (isDarkMode) body.classList.add('dark-mode');
-
-    if (themeBtn) {
-        themeBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            isDarkMode = body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-            themeBtn.innerHTML = isDarkMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-        });
-        // Cập nhật icon ban đầu
-        themeBtn.innerHTML = isDarkMode ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-    }
-
-    // 5. Ngôn ngữ (i18n) & LocalStorage
+    // 4. Ngôn ngữ (i18n) & LocalStorage
     const langBtn = document.getElementById('lang-toggle');
     const translations = {
         vi: {
@@ -111,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Tính năng Yêu thích (Favorites) lưu LocalStorage
+    // 5. Tính năng Yêu thích (Favorites) lưu LocalStorage
     const favBtns = document.querySelectorAll('.fav-icon-btn');
     const favCountEl = document.getElementById('fav-count');
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -147,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     updateFavCount();
 
-    // 7. Search Địa điểm Real-time
+    // 6. Search Địa điểm Real-time
     const searchInput = document.getElementById('searchInput');
     const destCards = document.querySelectorAll('.destination-card');
     const noResultMsg = document.getElementById('no-result-msg');
@@ -175,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Gallery Lightbox
+    // 7. Gallery Lightbox
     const galleryImgs = document.querySelectorAll('.gallery-img');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
