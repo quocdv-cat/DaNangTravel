@@ -44,7 +44,84 @@
     </header>
 
     <main>
-        
+        <section class="contact-hero">
+            <h1 data-i18n="contact_title">Liên Hệ</h1>
+            <p data-i18n="contact_desc">Hãy liên hệ với chúng tôi để có thông tin chi tiết và hỗ trợ</p>
+        </section>
+
+        <section class="contact-section container fade-in">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Gửi tin nhắn cho chúng tôi</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" data-i18n="name" required placeholder="Nhập họ tên của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">Email</label>
+                            <input type="email" id="email" name="email" data-i18n="email" required placeholder="Nhập email của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-i18n="phone">Điện thoại</label>
+                            <input type="tel" id="phone" name="phone" data-i18n="phone" placeholder="Nhập số điện thoại">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">Tin nhắn</label>
+                            <textarea id="message" name="message" data-i18n="message" rows="5" required placeholder="Nhập tin nhắn của bạn"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-i18n="send">Gửi</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <div class="info-section">
+                        <h2 data-i18n="address">Bản đồ du lịch Đà Nẵng</h2>
+                        <div class="map-placeholder">
+                            <img src="../images/contacts/maps.jpg" alt="Map Placeholder">
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Thông tin liên hệ</h2>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <p data-i18n="phone">Điện thoại</p>
+                                <p>+84 236 3555 555</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p>Email</p>
+                                <p data-i18n="email_info">info@exploredanang.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2 data-i18n="follow_us">Theo dõi chúng tôi</h2>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
