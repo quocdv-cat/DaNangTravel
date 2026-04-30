@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Khám phá Đà Nẵng - Thành phố đáng sống nhất Việt Nam. Trải nghiệm du lịch tuyệt vời.">
-    <title>Đà Nẵng Travel | Khám Phá Thành Phố Biển</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>404 Errors</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <script src="js/i18n.js"></script>
+
+    <style>
+    .error-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        text-align: center;
+    }
+    .error-code {
+        font-size: 10rem;
+        color: #ff6b6b;
+        margin-bottom: 20px;
+    }
+    .error-message {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    </style>
 </head>
 <body>
     <div id="loader" class="loader-container">
@@ -18,8 +36,8 @@
 
     <header class="header" id="header">
         <nav class="navbar container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo">
             </a>
             
             <div class="nav-menu" id="nav-menu">
@@ -45,49 +63,11 @@
     </header>
 
     <main>
-        <section class="hero">
-            <div class="slider" id="hero-slider">
-                <div class="slide active" style="background-image: url('images/destinations/cau-vang.png');">
-                    <div class="hero-content">
-                        <h1 data-i18n="hero_title">Khám Phá Đà Nẵng</h1>
-                        <p data-i18n="hero_desc">Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp và con người thân thiện.</p>
-                        <a href="pages/destinations.html" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
-                    </div>
-                </div>
-
-                <div class="slide" style="background-image: url('images/destinations/Quang-canh-bien-My-Khe.png');">
-                    <div class="hero-content">
-                        <h1 data-i18n="hero_title_2">Biển Xanh Cát Trắng</h1>
-                        <p data-i18n="hero_desc_2">Sở hữu những bãi biển quyến rũ nhất hành tinh do Forbes bình chọn.</p>
-                        <a href="pages/destinations.html" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slider-controls">
-                <button id="prev-slide"><i class="fa-solid fa-chevron-left"></i></button>
-                <button id="next-slide"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-        </section>
-
-        <section class="intro container fade-in">
-            <h2 class="section-title" data-i18n="why_danang">Vì sao chọn Đà Nẵng?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fa-solid fa-umbrella-beach"></i>
-                    <h3 data-i18n="beautiful_beach">Biển xanh cát trắng</h3>
-                    <p data-i18n="beach_desc">Sở hữu những bãi biển quyến rũ nhất hành tinh.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fa-solid fa-utensils"></i>
-                    <h3 data-i18n="tasty_food">Ẩm thực phong phú</h3>
-                    <p data-i18n="food_desc">Thưởng thức hương vị miền Trung đậm đà khó quên.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <h3 data-i18n="easy_travel">Di chuyển dễ dàng</h3>
-                    <p data-i18n="travel_desc">Hạ tầng giao thông hiện đại, kết nối thuận tiện.</p>
-                </div>
+        <section class="error-section">
+            <div class="container error-content">
+                <h1 class="error-code">404</h1>
+                <p class="error-message" data-i18n="error_message">Xin lỗi, trang bạn đang tìm kiếm không tồn tại.</p>
+                <a href="../index.html" class="btn btn-primary" data-i18n="back_home">Quay lại trang chủ</a>
             </div>
         </section>
     </main>
@@ -126,7 +106,6 @@
 
     <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
-    <script src="js/main.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

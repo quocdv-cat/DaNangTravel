@@ -302,7 +302,7 @@ ul {
 }
 .feature-card,
 .card {
-  background: var(--bg-gray);
+  background: var(--bg-gray-100);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
