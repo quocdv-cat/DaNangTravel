@@ -330,6 +330,7 @@ ul {
   color: var(--text-light);
   font-size: 15px;
 }
+
 .search-container,
 .search-box {
   position: relative;
@@ -749,9 +750,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
-.festival-card {
-  border-left: 5px solid #8e44ad;
-}
+
 .festival-card h3 {
   color: #8e44ad;
 }

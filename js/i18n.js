@@ -18,12 +18,12 @@ const translations = {
         
         // Features Section
         why_danang: "Vì sao chọn Đà Nẵng?",
-        beautiful_beach: "Biển xanh cát trắng",
-        beach_desc: "Sở hữu những bãi biển quyến rũ nhất hành tinh.",
+        beautiful_beach: "Địa điểm du lịch nổi tiếng",
+        beach_desc: "Khám phá những địa điểm du lịch nổi tiếng và hấp dẫn tại Đà Nẵng.",
         tasty_food: "Ẩm thực phong phú",
         food_desc: "Thưởng thức hương vị miền Trung đậm đà khó quên.",
-        easy_travel: "Di chuyển dễ dàng",
-        travel_desc: "Hạ tầng giao thông hiện đại, kết nối thuận tiện.",
+        uni_festival: "Lễ hội độc đáo",
+        festival_desc: "Tham gia vào những lễ hội sôi động và đậm đà bản sắc văn hóa Đà Nẵng.",
         
         // Common
         read_more: "Xem chi tiết",
@@ -134,12 +134,12 @@ const translations = {
         
         // Features Section
         why_danang: "Why Choose Da Nang?",
-        beautiful_beach: "Beautiful Beaches",
-        beach_desc: "Features the most stunning beaches on the planet.",
+        beautiful_des: "Famous Destinations",
+        des_desc: "Discover the famous and attractive tourist destinations in Da Nang.",
         tasty_food: "Rich Cuisine",
         food_desc: "Experience the distinctive flavors of the Central region.",
-        easy_travel: "Easy Travel",
-        travel_desc: "Modern transportation infrastructure and convenient connections.",
+        uni_festival: "Unique Festivals",
+        festival_desc: "Join vibrant festivals full of colors and rich cultural identity of Da Nang people.",
         
         // Common
         read_more: "Read More",
