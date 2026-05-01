@@ -32,6 +32,7 @@ const translations = {
         
         // Destinations Page
         destinations_title: "Các Địa Điểm Nổi Bật",
+        destinations_desc: "Khám phá những điểm đến không thể bỏ qua tại Đà Nẵng",
         no_result: "Không tìm thấy địa điểm phù hợp.",
         search_placeholder: "Tìm kiếm địa điểm...",
         
@@ -148,6 +149,7 @@ const translations = {
         
         // Destinations Page
         destinations_title: "Top Destinations",
+        destinations_desc: "Discover the must-visit destinations in Da Nang",
         no_result: "No destinations found.",
         search_placeholder: "Search destinations...",
         
