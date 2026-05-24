@@ -1,5 +1,6 @@
 :root {
     --primary-color: #0077b6;
+    --primary-dark: #023e8a;
     --secondary-color: #ffd166;
     --text-dark: #333;
     --text-light: #666;
@@ -103,14 +104,22 @@ ul {
     align-items: center;
     height: 70px;
 }
-.logo {
+.nav-logo {
     display: flex;
     align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', 'Georgia', serif;
     font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-dark);
 }
-.logo img {
-    height: 90px;
-    width: auto;
+
+.nav-logo .logo-da {
+    color: var(--primary-color);
+}
+
+.nav-logo .logo-nang {
+    color: var(--primary-dark);
 }
 .nav-menu {
     display: flex;
@@ -119,7 +128,7 @@ ul {
 }
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .nav-link {
     font-weight: 500;
@@ -229,6 +238,124 @@ ul {
     font-size: 19px;
     margin-bottom: 30px;
 }
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 20;
+  padding: 0 30px;
+  pointer-events: none;
+}
+
+.slider-controls button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.slider-controls button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.map-section {
+    padding: 80px 0;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.map-image-wrapper {
+    position: relative;
+}
+
+.map-image-wrapper img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid var(--bg-gray-100);
+}
+
+.map-source {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.map-source a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.map-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.map-content p {
+    margin-bottom: 16px;
+    color: var(--text-light);
+}
+
+.fact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.fact-card {
+    background: var(--bg-light);
+    border: 2px solid var(--bg-gray-100);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.fact-card:hover {
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.fact-card .fact-number {
+    /* font-family: 'Playfair Display', 'Georgia', serif; */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 4px;
+}
+
+.fact-card .fact-label {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
 .btn {
     padding: 12px 30px;
     border-radius: 30px;
@@ -502,11 +629,13 @@ ul {
 .form-group input,
 .form-group textarea,
 .newsletter-input input {
+    width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 14px;
     transition: var(--transition);
+    font-family: inherit;
 }
 .newsletter-input input {
     flex: 1;
@@ -685,81 +814,65 @@ ul {
 .festival-card h3 {
     color: #8e44ad;
 }
+/* --- CĂN CHỈNH FORM LIÊN HỆ --- */
+
+/* 1. Bao bọc ngoài cùng: Ép tất cả ra giữa màn hình */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: start;
-}
-.contact-form-wrapper h2,
-.contact-info-wrapper h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: var(--text-dark);
-}
-.contact-form {
-    background: var(--bg-gray);
-    padding: 30px;
-    border-radius: var(--radius);
-}
-.form-group {
-    margin-bottom: 20px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: var(--text-dark);
-}
-.contact-form .btn {
-    width: 100%;
-    margin-top: 10px;
-}
-.info-section {
-    margin-bottom: 40px;
-}
-.info-section h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.contact-item {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-.contact-item i {
-    font-size: 24px;
-    color: var(--primary-color);
-    width: 30px;
-    text-align: center;
-    margin-top: 5px;
-}
-.contact-item div p {
-    margin: 0;
-    padding: 0;
-}
-.contact-item div p:first-child {
-    font-weight: 500;
-    color: var(--text-dark);
-}
-.contact-item div p:last-child {
-    color: var(--text-light);
-    font-size: 14px;
-}
-.map-placeholder {
-    background: var(--bg-gray);
-    border-radius: var(--radius);
-    aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-.map-placeholder img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+
+/* 2. Khung chứa form: Giới hạn độ rộng tối đa để form không bị bành trướng */
+.contact-form-wrapper {
+    width: 100%;
+    max-width: 800px; /* Thu nhỏ lại 800px nhìn form sẽ sang trọng hơn */
+    margin: 0 auto;
+}
+
+/* 3. Tiêu đề form */
+.contact-form-wrapper h2 {
+    text-align: center;
+    font-size: 28px; /* Tăng kích thước chữ lên một chút */
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+/* 4. Khối nền xám: Tạo chiều sâu và ép nội dung (input) ra giữa */
+.contact-form {
+    background: var(--bg-gray);
+    padding: 50px 30px; /* Thêm đệm 2 bên để trên điện thoại không sát mép */
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Thêm bóng đổ nhẹ giúp form nổi bật khỏi nền trắng */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Trọng tâm: Gom các thẻ con ra giữa */
+}
+
+/* 5. Cấu trúc các ô nhập liệu */
+.form-group {
+    width: 100%;
+    max-width: 500px; /* Ô điền chữ chỉ rộng tối đa 500px, phần còn lại là nền xám */
+    margin-bottom: 25px;
+}
+
+/* 6. Chữ tiêu đề trên mỗi ô nhập liệu (Họ tên, Email...) */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* In đậm nhẹ chữ để dễ đọc hơn */
+    color: var(--text-dark);
+    text-align: left; /* Đảm bảo nhãn vẫn canh trái so với ô nhập */
+}
+
+/* 7. Căn giữa và đồng bộ nút Gửi */
+.contact-form .btn {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+    padding: 14px; /* Nút Gửi to ra một chút để click dễ hơn */
+    font-size: 16px;
 }
 
 @media (max-width: 768px) {
@@ -790,7 +903,7 @@ ul {
     .festival-hero h1 {
         font-size: 36px;
     }
-    .contact-container,
+
     .cuisine-grid,
     .destinations-grid,
     .festival-timeline {

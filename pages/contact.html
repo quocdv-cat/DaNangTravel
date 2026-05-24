@@ -18,8 +18,9 @@
 
     <header class="header" id="header">
         <nav class="navbar container">
-            <a href="../index.html" class="logo">
-                <img src="../images/logo.png" alt="Logo">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-da">Đà</span>
+                <span class="logo-nang">Nẵng</span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
@@ -54,72 +55,35 @@
             <div class="contact-container">
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
-                    <h2>Gửi tin nhắn cho chúng tôi</h2>
+                    <h2 data-i18n="send_this_message">Gửi tin nhắn cho chúng tôi</h2>
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name" data-i18n="name">Họ và tên</label>
-                            <input type="text" id="name" name="name" data-i18n="name" required placeholder="Nhập họ tên của bạn">
+                            <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email" data-i18n="email">Email</label>
-                            <input type="email" id="email" name="email" data-i18n="email" required placeholder="Nhập email của bạn">
+                            <input type="email" id="email" name="email" required>
                         </div>
 
                         <div class="form-group">
                             <label for="phone" data-i18n="phone">Điện thoại</label>
-                            <input type="tel" id="phone" name="phone" data-i18n="phone" placeholder="Nhập số điện thoại">
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-i18n="subject">Chủ đề</label>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
 
                         <div class="form-group">
                             <label for="message" data-i18n="message">Tin nhắn</label>
-                            <textarea id="message" name="message" data-i18n="message" rows="5" required placeholder="Nhập tin nhắn của bạn"></textarea>
+                            <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary" data-i18n="send">Gửi</button>
                     </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info-wrapper">
-                    <div class="info-section">
-                        <h2 data-i18n="address">Bản đồ du lịch Đà Nẵng</h2>
-                        <div class="map-placeholder">
-                            <img src="../images/contacts/maps.jpg" alt="Map Placeholder">
-                        </div>
-                    </div>
-
-                    <div class="info-section">
-                        <h2>Thông tin liên hệ</h2>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <p data-i18n="phone">Điện thoại</p>
-                                <p>+84 236 3555 555</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <p>Email</p>
-                                <p data-i18n="email_info">info@exploredanang.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-section">
-                        <h2 data-i18n="follow_us">Theo dõi chúng tôi</h2>
-                        <div class="social-links-large">
-                            <a href="404error.html" class="social-link">
-                                <i class="fa-brands fa-facebook"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="404error.html" class="social-link">
-                                <i class="fa-brands fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -128,7 +92,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-col">
-                <h3>Da Nang <span>Travel</span></h3>
+                <h3>DaNang<span>Travel</span></h3>
                 <p data-i18n="footer_desc">Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.</p>
             </div>
             <div class="footer-col">
@@ -153,7 +117,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p data-i18n="all_rights">&copy; 2026 DaNang Travel. Tất cả các quyền được bảo lưu.</p>
+            <p data-i18n="all_rights">&copy; 2026 DaNangTravel. Tất cả các quyền được bảo lưu.</p>
         </div>
     </footer>
 

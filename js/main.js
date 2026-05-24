@@ -166,4 +166,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if(e.target === lightbox) hideLightbox();
         });
     }
+
+    //8 Nút thu gọn/hiện thêm thông tin
+    const expandToggleBtn = document.querySelector('.expand-toggle');
+    if (expandToggleBtn) {
+        expandToggleBtn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+                targetContent.classList.toggle('hidden');
+                if (targetContent.classList.contains('hidden')) {
+                    this.textContent = 'Xem thêm';
+                } else {
+                    this.textContent = 'Thu gọn';
+                }
+            }
+        });
+    }
 });

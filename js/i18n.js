@@ -13,8 +13,8 @@ const translations = {
         hero_desc: "Thành phố đáng sống nhất Việt Nam với những bãi biển tuyệt đẹp và con người thân thiện.",
         explore_now: "Khám phá ngay",
 
-        hero_title_2: "Biển Xanh Cát Trắng",
-        hero_desc_2: "Sở hữu những bãi biển quyến rũ nhất hành tinh.",
+        hero_title_2: "Ẩm Thực Phong Phú",
+        hero_desc_2: "Thưởng thức những món ăn đặc sản của miền Trung với hương vị độc đáo.",
         
         // Features Section
         why_danang: "Vì sao chọn Đà Nẵng?",
@@ -23,8 +23,20 @@ const translations = {
         tasty_food: "Ẩm thực phong phú",
         food_desc: "Thưởng thức hương vị miền Trung đậm đà khó quên.",
         uni_festival: "Lễ hội độc đáo",
-        festival_desc: "Tham gia vào những lễ hội sôi động và đậm đà bản sắc văn hóa Đà Nẵng.",
-        
+        festival_desc: "Tham gia vào những lễ hội sôi động và đậm đà bản sắc văn hóa Đà Nẵng.",        
+        // Da Nang Section
+        danang_title: "Khám Phá Đà Nẵng",
+        danang_heading: "Bạn có biết Đà Nẵng nằm ở đâu không?",
+        danang_desc_1: "Đà Nẵng là một thành phố ven biển nằm ở miền Trung Việt Nam, đóng vai trò là hạt nhân quan trọng của Vùng kinh tế trọng điểm miền Trung. Thành phố giáp tỉnh Thừa Thiên Huế ở phía Bắc, tỉnh Quảng Nam ở phía Tây và Nam, và được bao bọc bởi Biển Đông rộng lớn ở phía Đông.",
+        danang_desc_2: "Với đường bờ biển dài khoảng 92 km, Đà Nẵng nổi tiếng với những bãi biển cát trắng miên man, tiêu biểu là bãi biển Mỹ Khê – từng được tạp chí Forbes vinh danh là một trong những bãi biển quyến rũ nhất hành tinh.",
+        danang_desc_3: "Địa hình thành phố vô cùng đa dạng, hòa quyện giữa núi, sông, đồng bằng và biển cả. Nơi đây sở hữu bán đảo Sơn Trà vươn mình ra biển và danh thắng Ngũ Hành Sơn mang đậm giá trị văn hóa tâm linh.",
+        danang_desc_4: "Về mặt hành chính, Đà Nẵng hiện được chia thành 8 đơn vị hành chính cấp huyện, bao gồm 6 quận nội thành và 2 huyện ngoại thành. Nơi đây luôn tự hào với danh xưng \"Thành phố đáng sống nhất Việt Nam\" nhờ môi trường trong lành và con người thân thiện.",
+        fact_area_dn: "Tổng diện tích km²",
+        fact_pop_dn: "Dân số hiện tại",
+        fact_coast_dn: "Đường bờ biển km",
+        fact_districts: "Quận và Huyện",
+        fact_bridges: "Cây cầu bắc qua sông Hàn",
+        fact_livable: "Thành phố đáng sống",        
         // Common
         read_more: "Xem chi tiết",
         quick_links: "Liên kết nhanh",
@@ -102,11 +114,13 @@ const translations = {
         // Contact Page
         contact_title: "Liên Hệ",
         contact_desc: "Hãy liên hệ với chúng tôi để có thông tin chi tiết và hỗ trợ",
+        send_this_message: "Gửi tin nhắn cho chúng tôi",
         name: "Họ và tên",
         email: "Email",
         message: "Tin nhắn",
         send: "Gửi",
         phone: "Điện thoại",
+        subject: "Chủ đề",
         address: "Bản đồ du lịch Đà Nẵng",
         email_info: "info@exploredanang.com",
         
@@ -114,7 +128,6 @@ const translations = {
         footer_desc: "Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.",
         follow_us: "Theo dõi chúng tôi",
         all_rights: "© 2026 DaNang Travel. Tất cả các quyền được bảo lưu.",
-        phone: "Điện thoại",
     },
     
     en: {
@@ -130,8 +143,8 @@ const translations = {
         hero_desc: "The most livable city in Vietnam with stunning beaches and friendly people.",
         explore_now: "Explore Now",
 
-        hero_title_2: "Blue Sea and White Sand",
-        hero_desc_2: "Home to some of the most alluring beaches on the planet.",
+        hero_title_2: "Rich Culinary Traditions",
+        hero_desc_2: "Experience the unique and delicious flavors of Central Vietnamese cuisine.",
         
         // Features Section
         why_danang: "Why Choose Da Nang?",
@@ -140,8 +153,20 @@ const translations = {
         tasty_food: "Rich Cuisine",
         food_desc: "Experience the distinctive flavors of the Central region.",
         uni_festival: "Unique Festivals",
-        festival_desc: "Join vibrant festivals full of colors and rich cultural identity of Da Nang people.",
-        
+        festival_desc: "Join vibrant festivals full of colors and rich cultural identity of Da Nang people.",        
+        // Da Nang Section
+        danang_title: "Explore Da Nang",
+        danang_heading: "Do you know where Da Nang is located?",
+        danang_desc_1: "Da Nang is a coastal city in Central Vietnam, serving as an important hub for the Central economic zone. The city is adjacent to Thua Thien Hue province to the north, Quang Nam province to the west and south, and surrounded by the vast East Sea to the east.",
+        danang_desc_2: "With a coastline of about 92 km, Da Nang is famous for its endless white sand beaches, notably My Khe Beach - once recognized by Forbes magazine as one of the most charming beaches on the planet.",
+        danang_desc_3: "The terrain of the city is extremely diverse, blending mountains, rivers, plains, and sea. It is home to the Son Tra Peninsula stretching into the sea and the Ngu Hanh Son landmark rich in cultural and spiritual values.",
+        danang_desc_4: "Administratively, Da Nang is divided into 8 administrative divisions at district level, consisting of 6 inner city districts and 2 outer city districts. Here, people take pride in the title \"Vietnam's Most Livable City\" thanks to its clean environment and friendly people.",
+        fact_area_dn: "Total Area (km²)",
+        fact_pop_dn: "Current Population",
+        fact_coast_dn: "Coastline (km)",
+        fact_districts: "Districts & Towns",
+        fact_bridges: "Bridges Over Han River",
+        fact_livable: "Most Livable City",        
         // Common
         read_more: "Read More",
         quick_links: "Quick Links",
@@ -219,19 +244,20 @@ const translations = {
         // Contact Page
         contact_title: "Contact Us",
         contact_desc: "Please contact us for detailed information and support",
+        send_this_message: "Send us a message",
         name: "Name",
         email: "Email",
         message: "Message",
         send: "Send",
         phone: "Phone",
+        subject: "Subject",
         address: "Da Nang Travel Map",
         email_info: "info@exploredanang.com",
         
         // Footer
         footer_desc: "Creating wonderful memories with you at the most livable city.",
         follow_us: "Follow Us",
-        all_rights: "© 2026 DaNang Travel. All rights reserved.",
-        phone: "Phone",
+        all_rights: "© 2026 DaNang Travel. All rights reserved."
     }
 };
 
