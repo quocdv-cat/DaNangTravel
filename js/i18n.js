@@ -15,6 +15,9 @@ const translations = {
 
         hero_title_2: "Ẩm Thực Phong Phú",
         hero_desc_2: "Thưởng thức những món ăn đặc sản của miền Trung với hương vị độc đáo.",
+
+        hero_title_3: "Lễ Hội Đặc Sắc",
+        hero_desc_3: "Trải nghiệm những lễ hội truyền thống của Đà Nẵng với không khí sôi động và đầy màu sắc.",
         
         // Features Section
         why_danang: "Vì sao chọn Đà Nẵng?",
@@ -70,6 +73,9 @@ const translations = {
         // Cuisine Page
         cuisine_title: "Ẩm Thực Đà Nẵng",
         cuisine_desc: "Khám phá những món ăn ngon nhất từ miền Trung Việt Nam",
+
+        search_placeholder_cuisine: "Tìm kiếm món ăn...",
+        no_result_cuisine: "Không tìm thấy món ăn phù hợp.",
         
         cao_lau: "Cao Lầu",
         cao_lau_desc: "Một trong những đặc sản phổ biến nhất của Quảng Nam với bánh sợi mềm, phần thịt heo ngọt lịm.",
@@ -92,6 +98,9 @@ const translations = {
         // Festivals Page
         festivals_title: "Lễ Hội Đà Nẵng",
         festivals_desc: "Những lễ hội sôi động và đầy màu sắc của thành phố Đà Nẵng",
+
+        search_placeholder_festival: "Tìm kiếm lễ hội...",
+        no_result_festival: "Không tìm thấy lễ hội phù hợp.",
         
         lantern_festival: "Lễ Hội Đèn Lồng",
         lantern_desc: "Lễ hội truyền thống diễn ra vào ngày rằm tháng Giêng hằng năm tại Hội An.",
@@ -123,6 +132,13 @@ const translations = {
         subject: "Chủ đề",
         address: "Bản đồ du lịch Đà Nẵng",
         email_info: "info@exploredanang.com",
+
+        option: "-- Chọn chủ đề --",
+        inquiry: "Thắc mắc",
+        feedback: "Góp ý",
+        bug: "Báo cáo sự cố",
+        booking: "Đặt tour",
+        other: "Khác",
         
         // Footer
         footer_desc: "Cùng bạn tạo nên những kỷ niệm tuyệt vời tại thành phố đáng sống.",
@@ -143,8 +159,11 @@ const translations = {
         hero_desc: "The most livable city in Vietnam with stunning beaches and friendly people.",
         explore_now: "Explore Now",
 
-        hero_title_2: "Rich Culinary Traditions",
+        hero_title_2: "Rich Cuisine",
         hero_desc_2: "Experience the unique and delicious flavors of Central Vietnamese cuisine.",
+
+        hero_title_3: "Vibrant Festivals",
+        hero_desc_3: "Experience the traditional festivals of Da Nang with vibrant and colorful atmospheres.",
         
         // Features Section
         why_danang: "Why Choose Da Nang?",
@@ -200,6 +219,9 @@ const translations = {
         // Cuisine Page
         cuisine_title: "Da Nang Cuisine",
         cuisine_desc: "Discover the best dishes from Central Vietnam",
+
+        search_placeholder_cuisine: "Search dishes...",
+        no_result_cuisine: "No dishes found.",
         
         cao_lau: "Cao Lau",
         cao_lau_desc: "One of the most popular specialties of Quang Nam with soft noodles and sweet pork.",
@@ -222,6 +244,9 @@ const translations = {
         // Festivals Page
         festivals_title: "Da Nang Festivals",
         festivals_desc: "Vibrant and colorful festivals of Da Nang city",
+
+        search_placeholder_festival: "Search festivals...",
+        no_result_festival: "No festivals found.",
         
         lantern_festival: "Lantern Festival",
         lantern_desc: "Traditional festival held on the 15th day of the first lunar month annually in Hoi An.",
@@ -253,6 +278,13 @@ const translations = {
         subject: "Subject",
         address: "Da Nang Travel Map",
         email_info: "info@exploredanang.com",
+
+        option: "-- Select Subject --",
+        inquiry: "Inquiry",
+        feedback: "Feedback",
+        bug: "Bug Report",
+        booking: "Booking",
+        other: "Other",
         
         // Footer
         footer_desc: "Creating wonderful memories with you at the most livable city.",

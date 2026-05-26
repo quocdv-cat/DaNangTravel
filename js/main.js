@@ -50,42 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Tính năng Yêu thích (Favorites) lưu LocalStorage
-    const favBtns = document.querySelectorAll('.fav-icon-btn');
-    const favCountEl = document.getElementById('fav-count');
-    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-
-    const updateFavCount = () => {
-        if(favCountEl) favCountEl.textContent = favorites.length;
-    };
-
-    // Khởi tạo trạng thái ban đầu
-    favBtns.forEach(btn => {
-        const id = btn.getAttribute('data-id');
-        if (favorites.includes(id)) {
-            btn.classList.add('liked');
-            btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
-        } else {
-            btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
-        }
-
-        btn.addEventListener('click', (e) => {
-            e.preventDefault(); // Tránh chuyển link nếu nằm trong thẻ a
-            if (favorites.includes(id)) {
-                favorites = favorites.filter(favId => favId !== id);
-                btn.classList.remove('liked');
-                btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
-            } else {
-                favorites.push(id);
-                btn.classList.add('liked');
-                btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
-            }
-            localStorage.setItem('favorites', JSON.stringify(favorites));
-            updateFavCount();
-        });
-    });
-    updateFavCount();
-
     // 6. Search Địa điểm Real-time
     const searchInput = document.getElementById('searchInput');
     const destCards = document.querySelectorAll('.destination-card');

@@ -628,6 +628,7 @@ ul {
 }
 .form-group input,
 .form-group textarea,
+.form-group select,
 .newsletter-input input {
     width: 100%;
     padding: 12px;
@@ -644,6 +645,7 @@ ul {
 }
 .form-group input:focus,
 .form-group textarea:focus,
+.form-group select:focus,
 .newsletter-input input:focus {
     outline: none;
     border-color: var(--primary-color);
