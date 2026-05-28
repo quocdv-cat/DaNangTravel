@@ -60,7 +60,7 @@
                 <!-- Cao Lau -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/cao-lau.jpeg" alt="Cao Lau">
+                        <img src="../images/cuisine/cao-lau.jpeg" alt="Cao Lau" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="cao_lau">Cao Lầu</h3>
@@ -75,7 +75,7 @@
                 <!-- Banh Mi -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/banh-mi.jpg" alt="Banh Mi">
+                        <img src="../images/cuisine/banh-mi.jpg" alt="Banh Mi" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="banh_my">Bánh Mỳ Đà Nẵng</h3>
@@ -90,7 +90,7 @@
                 <!-- Shrimp Cake -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/banh-tom.jpg" alt="Shrimp Cake">
+                        <img src="../images/cuisine/banh-tom.jpg" alt="Shrimp Cake" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="shrimp_cake">Bánh Tôm</h3>
@@ -105,7 +105,7 @@
                 <!-- Pho -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/pho_da_nang.jpg" alt="Pho">
+                        <img src="../images/cuisine/pho_da_nang.jpg" alt="Pho" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="pho">Phở Đà Nẵng</h3>
@@ -120,7 +120,7 @@
                 <!-- Fish Cake -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/cha-ca.jpg" alt="Fish Cake">
+                        <img src="../images/cuisine/cha-ca.jpg" alt="Fish Cake" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="fish_cake">Chả Cá Đà Nẵng</h3>
@@ -135,7 +135,7 @@
                 <!-- Banh Hoai -->
                 <div class="cuisine-card">
                     <div class="card-image">
-                        <img src="../images/cuisine/mi-quang.jpg" alt="Mi Quang">
+                        <img src="../images/cuisine/mi-quang.jpg" alt="Mi Quang" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="mi_quang">Mì Quảng</h3>
@@ -185,5 +185,12 @@
     <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="../js/main.js"></script>
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="close-lightbox"><i class="fa-solid fa-xmark"></i></span>
+        <button class="prev-lightbox"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="Da Nang Travel">
+        <button class="next-lightbox"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
 </body>
 </html>
