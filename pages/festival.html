@@ -45,110 +45,218 @@
     </header>
 
     <main>
-        <section class="festival-hero">
-            <h1 data-i18n="festivals_title">Lễ Hội Đà Nẵng</h1>
-            <div class="search-box">
-                <input type="text" id="searchInput" class="search-input" data-i18n="search_placeholder_festival" placeholder="Tìm kiếm lễ hội...">
-                <i class="fa-solid fa-search"></i>
+        <section class="festival-hero page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy fade-in">
+                    <span class="section-kicker" data-i18n="fest_vn">LỄ HỘI VIỆT NAM</span>
+                    <h1 data-i18n="festivals_title">Tận hưởng tinh hoa lễ hội Đà Nẵng</h1>
+                    <p data-i18n="festivals_desc">Từ pháo hoa quốc tế đến lễ hội truyền thống, hành trình lễ hội tại Đà Nẵng mang đến những trải nghiệm văn hóa đặc sắc và đầy cảm hứng.</p>
+                    <div class="hero-actions">
+                        <a href="#festival-list" class="btn btn-primary" data-i18n="view_festivals">Xem lễ hội</a>
+                        <a href="#festival-intro" class="btn btn-outline" data-i18n="explore">Khám phá</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="hero-card hero-card-alt">
+                        <span data-i18n="culture_connect">Văn hóa & kết nối</span>
+                        <h2 data-i18n="fest_colors">Lễ hội sắc màu</h2>
+                        <p data-i18n="fest_colors_desc">Khám phá những khoảnh khắc rực rỡ, nghi thức trang trọng và không khí nhộn nhịp của Đà Nẵng.</p>
+                        <div class="hero-card-meta">
+                            <div data-i18n="fest_count"><strong>5+</strong> lễ hội</div>
+                            <div data-i18n="fest_seasons"><strong>4</strong> mùa</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p data-i18n="festivals_desc">Những lễ hội sôi động và đầy màu sắc của thành phố Đà Nẵng</p>
+            <div class="container festival-filter">
+                <div class="filter-tabs">
+                    <button class="filter-pill active" data-season="all" data-i18n="all">Tất cả</button>
+                    <button class="filter-pill" data-season="spring" data-i18n="spring">Xuân</button>
+                    <button class="filter-pill" data-season="summer" data-i18n="summer">Hạ</button>
+                    <button class="filter-pill" data-season="autumn" data-i18n="autumn">Thu</button>
+                </div>
+            </div>
         </section>
-
-        <section class="festival-section container fade-in">
-            <div class="festival-timeline">
-                <!-- Lantern Festival -->
-                <div class="festival-card">
+        <section id="festival-intro" class="festival-intro container">
+            <div class="section-heading">
+                <span class="section-kicker" data-i18n="fest_culture">Văn hóa lễ hội</span>
+                <h2 class="section-title" data-i18n="vn_fest_identity">Lễ hội Việt Nam mang đậm bản sắc</h2>
+                <p class="section-description" data-i18n="vn_fest_identity_desc">Từ nghi thức truyền thống đến sự kiện hiện đại, mỗi lễ hội là một câu chuyện văn hóa riêng, mở ra hành trình khám phá sâu sắc cho du khách.</p>
+            </div>
+            <div class="highlight-grid">
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="traditional">Truyền thống</span>
+                    <h3 data-i18n="cau_ngu_fest">Lễ hội Cầu Ngư</h3>
+                    <p data-i18n="cau_ngu_desc_2">Hành trình biển cả kết hợp nghi lễ hướng đến bình an và một mùa đánh bắt bội thu.</p>
+                </article>
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="modern">Hiện đại</span>
+                    <h3 data-i18n="fireworks_fest">Pháo hoa quốc tế</h3>
+                    <p data-i18n="fireworks_desc_2">Sự kiện giải trí đẳng cấp quốc tế với màn trình diễn ánh sáng, âm nhạc và pháo hoa rực rỡ.</p>
+                </article>
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="spiritual">Tâm linh</span>
+                    <h3 data-i18n="quan_the_am_fest">Lễ hội Quán Thế Âm</h3>
+                    <p data-i18n="quan_the_am_desc_2">Không gian trang nghiêm và cầu an dành cho du khách tìm kiếm bình an và thanh tịnh.</p>
+                </article>
+            </div>
+        </section>
+        <section id="festival-list" class="festival-list container">
+            <div class="section-heading">
+                <h2 class="section-title" data-i18n="highlight_fest">Lễ hội nổi bật</h2>
+                <p class="section-description" data-i18n="highlight_fest_desc">Chọn lễ hội theo mùa và khám phá những sự kiện du lịch văn hóa hấp dẫn nhất tại thành phố biển.</p>
+            </div>
+            <div class="festival-grid">
+                <div class="festival-card" data-season="summer">
                     <div class="card-image">
-                        <img src="../images/festivals/le-hoi-den-long.jpeg" alt="Lantern Festival" class="gallery-img">
+                        <img src="../images/festivals/phao-hoa/1.png" alt="Fireworks" class="gallery-img">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="lantern_festival">Lễ Hội Đèn Lồng</h3>
+                        <h3 data-i18n="danang_fireworks">Lễ Hội Pháo Hoa Quốc Tế Đà Nẵng</h3>
                         <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> Lunar Month 1</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Hội An</span>
+                            <span data-i18n="apr_jul"><i class="fa-solid fa-calendar"></i> April - July</span>
+                            <span data-i18n="danang_loc"><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
                         </div>
-                        <p data-i18n="lantern_desc">Lễ hội truyền thống diễn ra vào ngày rằm tháng Giêng hằng năm tại Hội An.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <p data-i18n="fireworks_detail">Lễ hội pháo hoa quốc tế là đêm hội ánh sáng, âm nhạc và pháo hoa lộng lẫy bên sông Hàn.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/phao-hoa/2.png" alt="Pháo hoa" class="gallery-img">
+                                        <p data-i18n="fw_han_river">Pháo hoa rực sáng trên sông Hàn</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/phao-hoa/6.png" alt="Khán giả lễ hội" class="gallery-img">
+                                        <p data-i18n="fw_audience">Khán giả lễ hội</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/phao-hoa/khach-xem.png" alt="Du khách theo dõi" class="gallery-img">
+                                        <p data-i18n="fw_tourist">Du khách thưởng thức lễ hội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-
-                <!-- Fireworks Festival -->
-                <div class="festival-card">
+                <div class="festival-card" data-season="spring">
                     <div class="card-image">
-                        <img src="../images/festivals/le-hoi-phao-hoa.jpg" alt="Fireworks" class="gallery-img">
+                        <img src="../images/festivals/cau-ngu/1.png" alt="Cầu Ngư" class="gallery-img">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="fireworks">Lễ Hội Pháo Hoa</h3>
+                        <h3 data-i18n="cau_ngu_fest">Lễ Hội Cầu Ngư</h3>
                         <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> April - May</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
+                            <span data-i18n="march_lunar"><i class="fa-solid fa-calendar"></i> Tháng 3 (Âm lịch)</span>
+                            <span data-i18n="danang_coast"><i class="fa-solid fa-location-dot"></i> Ven biển Đà Nẵng</span>
                         </div>
-                        <p data-i18n="fireworks_desc">Lễ hội quốc tế độc đáo với những màn pháo hoa tuyệt đẹp phục vụ du lịch.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <p data-i18n="cau_ngu_detail">Lễ hội Cầu Ngư là nghi lễ truyền thống của ngư dân, cầu mong biển êm, cá đầy khoang và bình an.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/cau-ngu/7.png" alt="Cờ xí lễ hội" class="gallery-img">
+                                        <p data-i18n="cau_ngu_flags">Cờ xí tung bay, trống chiêng vang vọng</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/cau-ngu/2.png" alt="Rước kiệu" class="gallery-img">
+                                        <p data-i18n="cau_ngu_palanquin">Rước kiệu</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/cau-ngu/4.png" alt="Rước kiệu" class="gallery-img">
+                                        <p data-i18n="cau_ngu_palanquin">Rước kiệu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-
-                <!-- Da Nang Cau Ngu -->
-                <div class="festival-card">
+                <div class="festival-card" data-season="autumn">
                     <div class="card-image">
-                        <img src="../images/festivals/le-hoi-cau-ngu-da-nang-03-1024x576.jpg" alt="International Festival" class="gallery-img">
+                        <img src="../images/festivals/dinh-lang/4.png" alt="Túy Loan">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="danang_cau_ngu">Lễ Hội Cầu Ngư Đà Nẵng</h3>
+                        <h3 data-i18n="tuy_loan_fest">Lễ Hội Đình Làng Túy Loan</h3>
                         <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> Mar</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
+                            <span data-i18n="sep_lunar"><i class="fa-solid fa-calendar"></i> Tháng 9 (Âm lịch)</span>
+                            <span data-i18n="hoa_phong_loc"><i class="fa-solid fa-location-dot"></i> Hòa Phong, Đà Nẵng</span>
                         </div>
-                        <p data-i18n="danang_cau_ngu_desc">Lễ hội truyền thống với các hoạt động thể thao, văn hóa và giải trí sôi động.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <p data-i18n="tuy_loan_detail">Lễ hội đình làng Túy Loan tôn vinh làng quê, tục lệ và các nghi thức truyền thống đặc sắc.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/dinh-lang/6.png" alt="Đình làng" class="gallery-img">
+                                        <p data-i18n="tuy_loan_village">Đình làng cổ kính</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/dinh-lang/2.png" alt="Rước kiệu" class="gallery-img">
+                                        <p data-i18n="cau_ngu_palanquin">Rước kiệu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-
-                <!-- Da Nang Dinh Lang Tuy Am -->
-                <div class="festival-card">
+                <div class="festival-card" data-season="summer">
                     <div class="card-image">
-                        <img src="../images/festivals/le-hoi-dinh-lang-tuy-loan-03.jpg" alt="Mid-Autumn" class="gallery-img">
+                        <img src="../images/festivals/khinh-khi-cau/thumb.png" alt="Khinh khí cầu" class="gallery-img">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="danang_dinh_lang_tuy_am">Lễ Hội Đình Làng Tuý Loan</h3>
+                        <h3 data-i18n="balloon_fest">Lễ Hội Khinh Khí Cầu Đà Nẵng</h3>
                         <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> Lunar Month 9</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
+                            <span data-i18n="summer_season"><i class="fa-solid fa-calendar"></i> Mùa hè</span>
+                            <span data-i18n="danang_loc"><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
                         </div>
-                        <p data-i18n="danang_dinh_lang_tuy_am_desc">Lễ hội đặc biệt nổi tiếng với các hoạt động truyền thống.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <p data-i18n="balloon_detail">Sự kiện khinh khí cầu mang đến trải nghiệm nhìn ngắm thành phố từ trên cao đầy mê hoặc.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/khinh-khi-cau/6.png" alt="Khinh khí cầu" class="gallery-img">
+                                        <p data-i18n="balloon_overview">Toàn cảnh lễ hội</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/khinh-khi-cau/3.png" alt="Khinh khí cầu bay" class="gallery-img">
+                                        <p data-i18n="balloon_flying">Khinh khí cầu bay</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-
-                <!-- Da Nang Quan The Am -->
-                <div class="festival-card">
+                <div class="festival-card" data-season="spring">
                     <div class="card-image">
-                        <img src="../images/festivals/le-hoi-quan-the-am-nam-2025-se-dien-ra-tu-ngay-16-den-19-3-2025.jpg" alt="Lunar New Year" class="gallery-img">
+                        <img src="../images/festivals/quan-the-am/thumb.png" alt="Quán Thế Âm" class="gallery-img">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="danang_quan_the_am">Lễ Hội Quán Thế Âm</h3>
+                        <h3>Lễ Hội Quán Thế Âm</h3>
                         <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> Feb 17-19</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
+                            <span data-i18n="feb_19_lunar"><i class="fa-solid fa-calendar"></i> 19/2 Âm lịch</span>
+                            <span data-i18n="ngu_hanh_son_loc"><i class="fa-solid fa-location-dot"></i> Ngũ Hành Sơn</span>
                         </div>
-                        <p data-i18n="danang_quan_the_am_desc">Lễ hội Phật giáo lớn nhất, tại chùa Quán Thế Âm, quận Ngũ Hành Sơn.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
-                    </div>
-                </div>
-
-                <!-- Da Nang Beer Festival -->
-                <div class="festival-card">
-                    <div class="card-image">
-                        <img src="../images/festivals/le-hoi-bia.jpg" alt="Independence Day" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="danang_beer_festival">Lễ Hội Bia/Hoa</h3>
-                        <div class="festival-meta">
-                            <span><i class="fa-solid fa-calendar"></i> September 2</span>
-                            <span><i class="fa-solid fa-location-dot"></i> Đà Nẵng</span>
-                        </div>
-                        <p data-i18n="danang_beer_festival_desc">Diễn ra quanh năm, đặc biệt sôi động vào mùa hè.</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <p data-i18n="quan_the_am_detail">Lễ hội Quán Thế Âm là dịp cầu bình an, chiêm bái và thưởng thức không gian Phật giáo trang nghiêm.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/quan-the-am/hanh-huong.png" alt="Hành hương" class="gallery-img">
+                                        <p data-i18n="quan_the_am_pilgrim">Phật tử hành hương</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/quan-the-am/4.png" alt="Nghi lễ" class="gallery-img">
+                                        <p data-i18n="quan_the_am_ritual">Nghi lễ</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/festivals/quan-the-am/3.png" alt="Diễu hành" class="gallery-img">
+                                        <p data-i18n="quan_the_am_parade">Diễu hành</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>

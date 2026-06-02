@@ -49,32 +49,59 @@ document.addEventListener('DOMContentLoaded', () => {
             updateLanguage(newLang);
         });
     }
-
-    // 6. Search Địa điểm Real-time
-    const searchInput = document.getElementById('searchInput');
+    // 6. Lọc Địa điểm
     const destCards = document.querySelectorAll('.destination-card');
-    const noResultMsg = document.getElementById('no-result-msg');
+    const destinationRegionButtons = document.querySelectorAll('.filter-pill[data-region]');
+    let activeDestinationRegion = 'all';
 
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const keyword = e.target.value.toLowerCase().trim();
-            let hasVisible = false;
+    const updateDestinationCards = () => {
+        let hasVisible = false;
 
-            destCards.forEach(card => {
-                const name = card.getAttribute('data-name').toLowerCase();
-                if (name.includes(keyword)) {
-                    card.style.display = 'block';
-                    hasVisible = true;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+        destCards.forEach(card => {
+            const region = card.getAttribute('data-region');
+            const matchesRegion = activeDestinationRegion === 'all' || region === activeDestinationRegion;
 
-            if (!hasVisible && keyword !== '') {
-                noResultMsg.classList.remove('hidden');
+            if (matchesRegion) {
+                card.style.display = 'block';
+                hasVisible = true;
             } else {
-                noResultMsg.classList.add('hidden');
+                card.style.display = 'none';
             }
+        });
+
+    };
+
+    if (destinationRegionButtons.length) {
+        destinationRegionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                destinationRegionButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                activeDestinationRegion = button.getAttribute('data-region');
+                updateDestinationCards();
+            });
+        });
+    }
+
+    const festivalFilterButtons = document.querySelectorAll('.festival-filter .filter-pill');
+    const festivalCards = document.querySelectorAll('.festival-card');
+
+    if (festivalFilterButtons.length && festivalCards.length) {
+        festivalFilterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                festivalFilterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const season = button.getAttribute('data-season');
+
+                festivalCards.forEach(card => {
+                    const cardSeason = card.getAttribute('data-season');
+                    if (season === 'all' || cardSeason === season) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
         });
     }
 

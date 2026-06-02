@@ -46,98 +46,291 @@
     </header>
 
     <main>
-        <section class="destinations-hero">
-            <h1 data-i18n="destinations_title">Các Địa Điểm Nổi Bật</h1>
-            <div class="search-box">
-                <input type="text" id="searchInput" class="search-input" data-i18n="search_placeholder" placeholder="Tìm kiếm địa điểm...">
-                <i class="fa-solid fa-search"></i>
+        <section class="destinations-hero page-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy fade-in">
+                    <span class="section-kicker" data-i18n="destinations_main">KHÁM PHÁ ĐIỂM ĐẾN</span>
+                    <h1 data-i18n="destinations_title">Hành trình khám phá Đà Nẵng rực rỡ</h1>
+                    <p data-i18n="destinations_desc">Biển xanh, đỉnh núi thơ mộng và trải nghiệm văn hóa đặc sắc sẽ là nguồn cảm hứng cho chuyến đi tiếp theo của bạn.</p>
+                    <div class="hero-actions">
+                        <a href="#destination-list" class="btn btn-primary" data-i18n="explore_now">Khám phá ngay</a>
+                        <a href="#featured-destinations" class="btn btn-outline" data-i18n="featured_destinations">Điểm đến nổi bật</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="hero-card">
+                        <span data-i18n="top_destinations">Địa điểm nổi bật</span>
+                        <h2 data-i18n="livable_da_nang">Đà Nẵng đáng sống</h2>
+                        <p data-i18n="livable_desc">Đắm mình trong những trải nghiệm độc đáo của thành phố biển cùng không gian nghỉ dưỡng và văn hóa đặc sắc.</p>
+                        <div class="hero-card-meta">
+                            <div><strong>6+</strong> <span data-i18n="des">điểm đến</span></div>
+                            <div><strong>100%</strong> <span data-i18n="fav">cảm hứng</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p data-i18n="destinations_desc">Khám phá những điểm đến không thể bỏ qua tại Đà Nẵng</p>
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-pill active" data-region="all" data-i18n="all">Tất cả</button>
+                    <button class="filter-pill" data-region="bien" data-i18n="beach">Biển</button>
+                    <button class="filter-pill" data-region="nui" data-i18n="mountain">Núi</button>
+                    <button class="filter-pill" data-region="van-hoa" data-i18n="culture">Văn hóa</button>
+                    <button class="filter-pill" data-region="giai-tri" data-i18n="entertainment">Giải trí</button>
+                </div>
+            </div>
         </section>
 
-        <section class="destinations container fade-in">
-            <div class="destinations-grid" id="destinationsGrid">
-                <!-- Marble Mountains -->
-                <div class="destination-card" data-name="Ngũ Hành Sơn" data-id="marble">
+        <section id="featured-destinations" class="featured-destinations container">
+            <div class="section-heading">
+                <span class="section-kicker" data-i18n="featured_destinations">Điểm đến yêu thích</span>
+                <h2 class="section-title" data-i18n="top_experiences">Top trải nghiệm không thể bỏ lỡ</h2>
+                <p class="section-description" data-i18n="featured_desc">Những địa điểm được chọn lọc để bạn tận hưởng phong cách du lịch hiện đại, sang trọng và đầy cảm hứng.</p>
+            </div>
+            <div class="highlight-grid">
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="ba_na_hills">Bà Nà Hills</span>
+                    <h3 data-i18n="cloudy_tourism">Du lịch trên mây</h3>
+                    <p data-i18n="ba_na_desc">Thưởng ngoạn Cầu Vàng, vườn hoa Hàn Quốc và ẩm thực phong phú trong không gian mát lành.</p>
+                </article>
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="my_khe_beach">Biển Mỹ Khê</span>
+                    <h3 data-i18n="beautiful_beach">Bãi biển tuyệt đẹp</h3>
+                    <p data-i18n="myKhe_desc">Hoàng hôn rực rỡ, bờ cát mịn và nhiều hoạt động thể thao biển dành cho du khách.</p>
+                </article>
+                <article class="highlight-box">
+                    <span class="card-badge" data-i18n="marble_mountains">Ngũ Hành Sơn</span>
+                    <h3 data-i18n="spiritual_cultural">Văn hóa tâm linh</h3>
+                    <p data-i18n="marble_desc">Khám phá hang động, chùa chiền và đỉnh cảnh quan kỳ vĩ với bầu không khí thanh bình.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="destination-list container">
+            <div class="section-heading">
+                <h2 class="section-title" data-i18n="highlight_des">Điểm đến nổi bật</h2>
+                <p class="section-description" data-i18n="highlight_des_desc">Khám phá những địa điểm được lựa chọn hàng đầu tại Đà Nẵng, nơi kết hợp giữa thiên nhiên tuyệt đẹp và văn hóa phong phú.</p>
+            </div>
+            <div id="destination-list" class="destinations-grid">
+                <div class="destination-card" data-name="Asia Park Sun World Đà Nẵng" data-region="giai-tri">
                     <div class="card-image">
-                        <img src="../images/destinations/ngu-hanh-son.png" alt="Ngũ Hành Sơn" class ="gallery-img">
+                        <img src="../images/destinations/asia-park/1.png" alt="Asia Park" class="gallery-img">
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="marble_mountains">Ngũ Hành Sơn</h3>
-                        <p data-i18n="marble_desc">Một trong những danh lam thắng cảnh nổi tiếng nhất Đà Nẵng với 5 quả núi đá vôi tuyệt đẹp.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <h3 data-i18n="asia_park_title">Asia Park</h3>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="asia_enter1">Khu vui chơi</span></span>
+                            <span><i class="fa-solid fa-star"></i> <span data-i18n="asia_enter2">Giải trí</span></span>
+                        </div>
+                        <p data-i18n="asia_park_desc">Asia Park kết hợp trò chơi mạo hiểm và trải nghiệm nghệ thuật cùng không gian check-in sống ảo độc đáo.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/TagoCongthanh.png" alt="Cổng thành Asia Park" class="gallery-img">
+                                        <p data-i18n="asia_park_gate">Cổng thành Asia Park</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/2.png" alt="Vòng quay Sun Wheel" class="gallery-img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/tau-luon.png" alt="Tàu lượn siêu tốc" class="gallery-img">
+                                        <p data-i18n="asia_park_speedboat">Tàu lượn siêu tốc</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/roi-viet.png" alt="Biểu diễn múa rối nước" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/roi-viet-2.png" alt="Múa rối nước" class="gallery-img">
+                                        <p data-i18n="asia_park_artistic_show">Biểu diễn nghệ thuật</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/asia-park/thuyen-rong.png" alt="Thuyền rồng" class="gallery-img">
+                                        <p data-i18n="asia_park_dragon_boat">Thuyền rồng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-
-                <!-- Bán đảo Sơn Trà  -->
-                <div class="destination-card" data-name="Bán đảo Sơn Trà" data-id="son_tra">
+                <div class="destination-card" data-name="Ba Na Hills" data-region="nui">
                     <div class="card-image">
-                        <img src="../images/destinations/ban-dao-son-tra.jpeg" alt="Bán đảo Sơn Trà" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="son_tra_island">Bán đảo Sơn Trà</h3>
-                        <p data-i18n="son_tra_desc">Một trong những địa điểm du lịch nổi tiếng nhất Đà Nẵng với cảnh quan thiên nhiên tuyệt đẹp.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Sơn Trà, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
-                    </div>
-                </div>
-
-                <!-- Han Market -->
-                <div class="destination-card" data-name="Chợ Hàn" data-id="market">
-                    <div class="card-image">
-                        <img src="../images/destinations/cho-han.jpg" alt="Chợ Hàn" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="han_market">Chợ Hàn</h3>
-                        <p data-i18n="han_desc">Chợ truyền thống với đa dạng các sản phẩm địa phương và đồ lưu niệm độc đáo.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
-                    </div>
-                </div>
-
-                <!-- My Khe Beach -->
-                <div class="destination-card" data-name="Bãi Biển Mỹ Khê" data-id="beach">
-                    <div class="card-image">
-                        <img src="../images/destinations/Quang-canh-bien-My-Khe.png" alt="Bãi Biển Mỹ Khê" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="my_khe_beach">Bãi Biển Mỹ Khê</h3>
-                        <p data-i18n="myKhe_desc">Bãi biển dài nhất Đà Nẵng với cát trắng mịn và nước xanh trong suốt.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Ngũ Hành Sơn, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
-                    </div>
-                </div>
-
-                <!-- Dragon Bridge -->
-                <div class="destination-card" data-name="Cầu Rồng" data-id="dragon">
-                    <div class="card-image">
-                        <img src="../images/destinations/cau-rong.png" alt="Cầu Rồng" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="dragon_bridge">Cầu Rồng</h3>
-                        <p data-i18n="dragon_desc">Biểu tượng của thành phố Đà Nẵng với kiến trúc độc đáo hình con rồng.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hải Châu, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
-                    </div>
-                </div>
-
-                <!-- Ba Na Hills -->
-                <div class="destination-card" data-name="Bà Nà Hills" data-id="bana">
-                    <div class="card-image">
-                        <img src="../images/destinations/ba-na-hills.png" alt="Bà Nà Hills" class="gallery-img">
+                        <img src="../images/destinations/ba-na-hills/1.png" alt="Bà Nà Hills" class="gallery-img">
                     </div>
                     <div class="card-content">
                         <h3 data-i18n="ba_na_hills">Bà Nà Hills</h3>
-                        <p data-i18n="bana_desc">Một điểm du lịch tuyệt vời với khí hậu mát mẻ, công viên giải trí và quần áo truyền thống.</p>
-                        <p class="location"><i class="fa-solid fa-map-pin"></i> Hòa Vang, Đà Nẵng</p>
-                        <a href="404error.html" class="btn btn-secondary" data-i18n="read_more">Xem chi tiết</a>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="mountain2">Núi</span></span>
+                            <span><i class="fa-solid fa-sun"></i> <span data-i18n="romantic">Lãng mạn</span></span>
+                        </div>
+                        <p data-i18n="bana_desc">Bà Nà Hills nổi bật với Cầu Vàng, làng Pháp và không gian sương mù mang đến cảm giác như ở châu Âu.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/cau-vang.png" alt="Cầu Vàng" class="gallery-img">
+                                        <p data-i18n="bana_symbol_bridge">Cầu Vàng biểu tượng</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/lang-phap.png" alt="Làng Pháp" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/lang-phap2.png" alt="Làng Pháp" class="gallery-img">
+                                        <p data-i18n="bana_french_village">Khu Làng Pháp</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/thac-than-mtroi.png" alt="Thác Thần Mặt Trời" class="gallery-img">
+                                        <p data-i18n="bana_sun">Thác Thần Mặt Trời</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/4.png" alt="Show nghệ thuật" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/ba-na-hills/5.png" alt="Show nghệ thuật" class="gallery-img">
+                                        <p data-i18n="bana_entertainment_show">Show giải trí đặc sắc</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
                     </div>
                 </div>
-            </div>
-
-            <div id="no-result-msg" class="no-result-msg hidden" data-i18n="no_result">
-                Không tìm thấy địa điểm phù hợp.
+                <div class="destination-card" data-name="Bán đảo Sơn Trà" data-region="nui">
+                    <div class="card-image">
+                        <img src="../images/destinations/son-tra/1.png" alt="Bán đảo Sơn Trà" class="gallery-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="son_tra_peninsula">Bán đảo Sơn Trà</h3>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="nature">Thiên nhiên</span></span>
+                            <span><i class="fa-solid fa-tree-city"></i> <span data-i18n="green_and_fresh">Xanh mát</span></span>
+                        </div>
+                        <p data-i18n="son_tra_desc">Nơi hòa quyện giữa rừng nguyên sinh, biển và tâm linh, Sơn Trà mang đến không gian nghỉ dưỡng thiên nhiên trọn vẹn.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/son-tra/1.png" alt="Sơn Trà" class="gallery-img">
+                                        <p data-i18n="son_tra_overview">Toàn cảnh Sơn Trà</p>
+                                        <img class="gallery-img" src="../images/destinations/son-tra/bien.png" alt="Biển Sơn Trà" class="gallery-img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/son-tra/cua-linh-ung.png" alt="Chùa Linh Ứng" class="gallery-img">
+                                        <p data-i18n="son_tra_buddha_temple">Chùa Linh Ứng</p>
+                                        <img class="gallery-img" src="../images/destinations/son-tra/dinh-ban-co.png" alt="Đỉnh Bàn Cờ" class="gallery-img">
+                                        <p data-i18n="son_tra_summit">Đỉnh Bàn Cờ</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/son-tra/4-mua.png" alt="Rừng Sơn Trà" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/son-tra/4-mua2.png" alt="Rừng Sơn Trà" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/son-tra/4-mua3.png" alt="Rừng Sơn Trà" class="gallery-img">
+                                        <p data-i18n="son_tra_ecosystem">Hệ sinh thái đa dạng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="destination-card" data-name="Biển Mỹ Khê" data-region="bien">
+                    <div class="card-image">
+                        <img src="../images/destinations/bien-my-khe/1.png" alt="Biển Mỹ Khê" class="gallery-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="my_khe_beach">Biển Mỹ Khê</h3>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="beach2">Bãi biển</span></span>
+                            <span><i class="fa-solid fa-water"></i> <span data-i18n="dynamic">Năng động</span></span>
+                        </div>
+                        <p data-i18n="my_khe_beach_desc">Biển Mỹ Khê là bãi biển danh tiếng với cát trắng, nước trong và các hoạt động giải trí hấp dẫn.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/overview.png" alt="Biển Mỹ Khê" class="gallery-img">
+                                        <p data-i18n="my_khe_beach_overview">Bãi biển Mỹ Khê rộng và sạch.</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/dulich1.png" alt="Du lịch Mỹ Khê" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/dulich2.png" alt="Du lịch Mỹ Khê" class="gallery-img">
+                                        <p data-i18n="my_khe_beach_activities">Không gian du lịch sôi động.</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/dulich3.png" alt="Check-in Mỹ Khê" class="gallery-img">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/dulich4.png" alt="Check-in Mỹ Khê" class="gallery-img">
+                                        <p data-i18n="my_khe_beach_check_in">Ảnh check-in đầy sắc màu.</p>
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/bien-my-khe/the-thao-bien-my-khe.png" alt="Thể thao biển" class="gallery-img">
+                                        <p data-i18n="my_khe_beach_sports">Hoạt động thể thao biển đa dạng.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="destination-card" data-name="Cầu Rồng" data-region="van-hoa">
+                    <div class="card-image">
+                        <img src="../images/destinations/cau-rong/1.png" alt="Cầu Rồng" class="gallery-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="cau_rong">Cầu Rồng</h3>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="symbol">Biểu tượng</span></span>
+                            <span><i class="fa-solid fa-fire-flame-curved"></i> <span data-i18n="night_activities">Hoạt động đêm</span></span>
+                        </div>
+                        <p data-i18n="cau_rong_desc">Cầu Rồng là biểu tượng hiện đại của Đà Nẵng với màn phun lửa và nước đầy ấn tượng mỗi cuối tuần.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/cau-rong/5.png" alt="Rồng phun lửa" class="gallery-img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/cau-rong/3.png" alt="Phun lửa" class="gallery-img">
+                                        <p data-i18n="cau_rong_fire_display">Màn trình diễn phun lửa</p>
+                                    </div>
+                                    <div class="item full">
+                                        <img class="gallery-img" src="../images/destinations/cau-rong/4.png" alt="Check-in Cầu Rồng" class="gallery-img">
+                                        <p data-i18n="cau_rong_check_in">Check-in tại cầu Rồng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="destination-card" data-name="Ngũ Hành Sơn" data-region="van-hoa">
+                    <div class="card-image">
+                        <img src="../images/destinations/ngu-hanh-son/1.png" alt="Ngũ Hành Sơn" class="gallery-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="ngu_hanh_son">Ngũ Hành Sơn</h3>
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="culture2">Di tích</span></span>
+                            <span><i class="fa-solid fa-mountain"></i> <span data-i18n="culture3">Văn hóa</span></span>
+                        </div>
+                        <p data-i18n="ngu_hanh_son_desc">Ngũ Hành Sơn là quần thể danh thắng nổi tiếng với chùa chiền, hang động và không gian linh thiêng.</p>
+                        <details class="detail-toggle">
+                            <summary class="btn btn-outline"><span data-i18n="explore_now">Khám phá thêm </span> <i class="fa-solid fa-chevron-down"></i></summary>
+                            <div class="detail-content">
+                                <div class="gallery">
+                                    <h4 data-i18n="temples_caves">Chùa & hang động</h4>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ngu-hanh-son/1.png" alt="Chùa Ngũ Hành Sơn" class="gallery-img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ngu-hanh-son/3.png" alt="Hang động" class="gallery-img">
+                                    </div>
+                                    <div class="item">
+                                        <img class="gallery-img" src="../images/destinations/ngu-hanh-son/5.png" alt="Ngũ Hành Sơn" class="gallery-img">
+                                    </div>
+                                </div>
+                                <div class="gallery">
+                                    <h4 data-i18n="mountain_peaks_scenery">Đỉnh núi và cảnh quan</h4>
+                                    <div class="item"><img class="gallery-img" src="../images/destinations/ngu-hanh-son/kim-son.png" alt="Kim Sơn" class="gallery-img"><p data-i18n="kim_son">Kim Sơn</p></div>
+                                    <div class="item"><img class="gallery-img" src="../images/destinations/ngu-hanh-son/moc-son.png" alt="Mộc Sơn" class="gallery-img"><p data-i18n="moc_son">Mộc Sơn</p></div>
+                                    <div class="item"><img class="gallery-img" src="../images/destinations/ngu-hanh-son/thuy-son.png" alt="Thủy Sơn" class="gallery-img"><p data-i18n="thuy_son">Thủy Sơn</p></div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

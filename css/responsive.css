@@ -5,13 +5,15 @@
     .fact-cards {
         grid-template-columns: 1fr 1fr;
     }
+    .contact-two-cols {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
     .hamburger {
         display: block;
     }
-
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -23,7 +25,6 @@
         transition: var(--transition);
         padding-top: 40px;
     }
-
     .nav-menu.active {
         left: 0;
     }
@@ -32,23 +33,89 @@
         align-items: center;
         gap: 30px;
     }
-
     .footer-content {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 30px;
         text-align: center;
     }
-    .hero-content h1 {
-        font-size: 2.5rem;
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
     }
-
+    .footer-links {
+        justify-content: center;
+    }
+    .newsletter-input {
+        flex-direction: column;
+    }
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    .hero-content h1,
+    .contact-hero h1,
+    .cuisine-hero h1,
+    .destinations-hero h1,
+    .festival-hero h1 {
+        font-size: 36px;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .hero-copy {
+        text-align: center;
+    }
+    .hero-visual {
+        justify-content: center;
+    }
+    .hero-card {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero-actions {
+        justify-content: center;
+    }
+    .search-panel {
+        padding: 0 10px 30px;
+    }
+    .filter-tabs {
+        justify-content: center;
+    }
+    .cuisine-grid,
+    .destinations-grid,
+    .festival-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .social-link,
+    .social-links-large {
+        flex-direction: column;
+    }
+    .social-link {
+        width: 100%;
+        justify-content: center;
+    }
     .next-lightbox,
     .prev-lightbox {
         padding: 10px;
         font-size: 16px;
     }
-
     .fact-cards {
+        grid-template-columns: 1fr;
+    }
+    .cuisine-hero-layout,
+    .contact-hero-layout {
+        grid-template-columns: 1fr;
+    }
+    .utility-grid,
+    .utilities-showcase {
+        grid-template-columns: 1fr;
+    }
+    .form-row {
         grid-template-columns: 1fr;
     }
 }

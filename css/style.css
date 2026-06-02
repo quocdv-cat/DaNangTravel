@@ -7,6 +7,7 @@
     --bg-light: #fff;
     --bg-gray: #f8f9fa;
     --bg-gray-100: #abb8c3;
+    --bg-gray-50:#EEEEEE;
     --transition: all 0.3s ease;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     --radius: 12px;
@@ -239,6 +240,382 @@ ul {
     margin-bottom: 30px;
 }
 
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+.page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 23, 44, 0.58);
+    z-index: 0;
+}
+.page-hero .container {
+    position: relative;
+    z-index: 1;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+.hero-copy {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+.hero-copy .section-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.hero-copy h1 {
+    font-size: 45px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+.hero-copy p {
+    max-width: 620px;
+    font-size: 17px;
+    color: #f3f5f8;
+    margin-bottom: 28px;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+.hero-card {
+    max-width: 420px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+}
+.hero-card span {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-card h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+    color: #fff;
+}
+.hero-card p {
+    color: #dfe4ea;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.hero-card-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+.hero-card-meta strong {
+    color: var(--secondary-color);
+    display: block;
+    font-size: 19px;
+}
+.page-hero .festival-filter {
+    padding: 0;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+.filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.filter-pill {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+.filter-pill.active,
+.filter-pill:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--text-dark);
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title {
+    text-align: center;
+    margin: 0px 0 40px;
+    font-size: 40px;
+}
+.section-description {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.featured-destinations,
+.festival-intro,
+.festival-filter,
+.festival-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.highlight-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.highlight-box {
+    background: var(--bg-gray-100);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    transition: var(--transition);
+}
+.highlight-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+.highlight-box .card-badge {
+    display: inline-flex;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.highlight-box h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    color: var(--text-dark);
+}
+.highlight-box p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+.destinations-grid,
+.festival-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.destination-card,
+.festival-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: calc(var(--radius) + 4px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: var(--transition);
+}
+.destination-card:hover,
+.festival-card:hover {
+    transform: translateY(-6px);
+}
+.destination-card .card-image,
+.festival-card .card-image {
+    height: 260px;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.destination-card:hover .card-image img,
+.festival-card:hover .card-image img {
+    transform: scale(1.08);
+}
+.card-content {
+    padding: 24px;
+}
+.destination-card h3,
+.festival-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+.card-meta,
+.festival-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    font-size: 15px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+.card-meta span,
+.festival-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+.btn-outline {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+}
+.btn-outline:hover {
+    color: var(--text-dark);
+    background: #fff;
+}
+.btn-secondary {
+    background-color: rgba(0, 119, 182, 0.08);
+    color: var(--primary-dark);
+    border-color: rgba(0, 119, 182, 0.14);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+summary.btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none !important;
+    outline: none;
+    cursor: pointer;
+}
+summary.btn::-webkit-details-marker {
+    display: none !important;
+}
+summary.btn::marker {
+    content: none !important;
+}
+summary.btn.btn-outline {
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    background: transparent !important;
+}
+summary.btn.btn-outline:hover {
+    color: #fff !important;
+    background: var(--primary-color) !important;
+}
+summary.btn.btn-secondary {
+    color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    background: #f5f5f5 !important;
+}
+summary.btn.btn-secondary:hover {
+    color: #fff !important;
+    background: var(--primary-color) !important;
+}
+summary.btn i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+details[open] summary.btn i {
+    transform: rotate(180deg);
+}
+.hero-card-alt {
+    border-color: rgba(255,255,255,0.18);
+}
+.detail-toggle {
+    margin-top: 22px;
+}
+.detail-toggle summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    transition: var(--transition);
+}
+.detail-toggle summary:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+.detail-toggle summary::-webkit-details-marker {
+    display: none;
+}
+.detail-content {
+    margin-top: 20px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+.gallery {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    align-items: stretch;
+}
+.gallery .item {
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: rgba(255,255,255,0.06);
+}
+.gallery .item p {
+    padding: 10px 12px;
+    color: #eef2f8;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+.gallery .item:hover .gallery-img {
+    transform: scale(1.03);
+}
+.festival-filter {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.festival-list .section-heading {
+    margin-bottom: 24px;
+    text-align: center;
+}
+.festival-list .section-title {
+    font-size: 32px;
+}
+.festival-list .section-description {
+    margin-top: 12px;
+}
 .slider-controls {
   position: absolute;
   top: 50%;
@@ -251,7 +628,6 @@ ul {
   padding: 0 30px;
   pointer-events: none;
 }
-
 .slider-controls button {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
@@ -268,13 +644,11 @@ ul {
   align-items: center;
   backdrop-filter: blur(5px);
 }
-
 .slider-controls button:hover {
   background-color: var(--primary-color);
   color: #fff;
   transform: scale(1.1);
 }
-
 .map-section {
     padding: 80px 0;
 }
@@ -300,7 +674,7 @@ ul {
 }
 
 .map-source {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: var(--text-light);
     margin-top: 8px;
     line-height: 1.5;
@@ -312,7 +686,7 @@ ul {
 }
 
 .map-content h2 {
-    font-size: 1.8rem;
+    font-size: 29px;
     margin-bottom: 20px;
 }
 
@@ -344,18 +718,52 @@ ul {
 
 .fact-card .fact-number {
     /* font-family: 'Playfair Display', 'Georgia', serif; */
-    font-size: 1.6rem;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--primary-dark);
+    color: var(--primary-color);
     margin-bottom: 4px;
 }
 
 .fact-card .fact-label {
-    font-size: 0.82rem;
+    font-size: 13px;
     color: var(--text-light);
     font-weight: 500;
 }
-
+.features-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 60px;
+}
+.feature-card {
+    background: var(--bg-gray-100);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    transition: var(--transition);
+    text-align: center;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.feature-card i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+.feature-card p {
+    color: var(--text-light);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
 .btn {
     padding: 12px 30px;
     border-radius: 30px;
@@ -391,147 +799,6 @@ ul {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
-.section-title {
-    text-align: center;
-    margin: 60px 0 40px;
-    font-size: 40px;
-}
-.cuisine-grid,
-.destinations-grid,
-.features-grid,
-.festival-timeline {
-    display: grid;
-    gap: 30px;
-}
-.destinations-grid,
-.features-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 60px;
-}
-.cuisine-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-}
-.festival-timeline {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
-.card,
-.cuisine-card,
-.destination-card,
-.feature-card,
-.festival-card {
-    background: var(--bg-gray-100);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-.cuisine-card,
-.destination-card,
-.festival-card {
-    background: #fff;
-    overflow: hidden;
-}
-.card {
-    position: relative;
-    overflow: hidden;
-}
-.card:hover,
-.cuisine-card:hover,
-.destination-card:hover,
-.feature-card:hover,
-.festival-card:hover {
-    transform: translatey(-10px);
-}
-.cuisine-card:hover,
-.destination-card:hover,
-.feature-card:hover,
-.festival-card:hover {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-.card-img-wrapper,
-.cuisine-card .card-image,
-.destination-card .card-image,
-.festival-card .card-image {
-    width: 100%;
-    overflow: hidden;
-}
-.card-img-wrapper,
-.destination-card .card-image {
-    height: 250px;
-}
-.cuisine-card .card-image,
-.festival-card .card-image {
-    height: 220px;
-}
-.card-img-wrapper img,
-.cuisine-card .card-image img,
-.destination-card .card-image img,
-.festival-card .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
-.card:hover .card-img-wrapper img,
-.cuisine-card:hover .card-image img,
-.destination-card:hover .card-image img,
-.festival-card:hover .card-image img {
-    transform: scale(1.1);
-}
-.card-content,
-.cuisine-card .card-content,
-.destination-card .card-content,
-.festival-card .card-content {
-    padding: 20px;
-}
-.feature-card {
-    padding: 30px;
-    text-align: center;
-}
-.feature-card i {
-    font-size: 48px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    display: block;
-}
-.destination-card h3,
-.feature-card h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
-    color: var(--text-dark);
-}
-.cuisine-card p,
-.destination-card p,
-.feature-card p,
-.festival-card p {
-    color: var(--text-light);
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.search-box,
-.search-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto 40px;
-}
-.search-input {
-    width: 100%;
-    padding: 15px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    background: var(--bg-gray);
-    color: var(--text-dark);
-    border: none;
-    box-shadow: var(--shadow);
-}
-.search-box i,
-.search-icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translatey(-50%);
-    color: var(--text-light);
-}
 .lightbox {
     position: fixed;
     inset: 0;
@@ -543,7 +810,7 @@ ul {
 }
 .lightbox-content {
     max-width: 90%;
-    max-height: 80vh;
+    max-height: 614px;
     animation: zoomin 0.3s;
 }
 .close-lightbox,
@@ -587,7 +854,6 @@ ul {
     padding: 60px 0 20px;
     margin-top: 100px;
     transition: var(--transition);
-    border-radius: 2% 2% 0 0;
 }
 .footer-content {
     display: grid;
@@ -738,7 +1004,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 24px;
     cursor: pointer;
     box-shadow: var(--shadow);
     opacity: 0;
@@ -764,13 +1030,17 @@ ul {
     margin-top: 70px;
 }
 .destinations-hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #00a8cc 100%);
+    background-image: linear-gradient(135deg, rgba(0, 119, 182, 0.82), rgba(0, 168, 204, 0.65)), url("../images/destinations/bien-my-khe/1.png");
+    background-size: cover;
+    background-position: center;
 }
 .cuisine-hero {
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
 }
 .festival-hero {
-    background: linear-gradient(135deg, #8e44ad 0%, #2980b9 100%);
+    background-image: linear-gradient(135deg, rgba(142, 68, 173, 0.82), rgba(41, 128, 185, 0.65)), url("../images/festivals/phao-hoa/1.png");
+    background-size: cover;
+    background-position: center;
 }
 .contact-hero {
     background: linear-gradient(135deg, #16a085 0%, #27ae60 100%);
@@ -801,6 +1071,39 @@ ul {
 .cuisine-card h3 {
     color: #ff6b35;
 }
+.cuisine-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: 60px;
+}
+.cuisine-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: calc(var(--radius) + 4px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: var(--transition);
+}
+.cuisine-card:hover {
+    transform: translateY(-6px);
+}
+.cuisine-card .card-image {
+    height: 240px;
+    overflow: hidden;
+}
+.cuisine-card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.cuisine-card:hover .card-image img {
+    transform: scale(1.08);
+}
+.cuisine-card .card-content {
+    padding: 24px;
+}
 .card-meta,
 .festival-meta {
     display: flex;
@@ -816,108 +1119,407 @@ ul {
 .festival-card h3 {
     color: #8e44ad;
 }
-/* --- CĂN CHỈNH FORM LIÊN HỆ --- */
-
-/* 1. Bao bọc ngoài cùng: Ép tất cả ra giữa màn hình */
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
-/* 2. Khung chứa form: Giới hạn độ rộng tối đa để form không bị bành trướng */
 .contact-form-wrapper {
     width: 100%;
-    max-width: 800px; /* Thu nhỏ lại 800px nhìn form sẽ sang trọng hơn */
+    max-width: 800px;
     margin: 0 auto;
 }
-
-/* 3. Tiêu đề form */
 .contact-form-wrapper h2 {
     text-align: center;
-    font-size: 28px; /* Tăng kích thước chữ lên một chút */
+    font-size: 28px;
     margin-bottom: 30px;
     color: var(--text-dark);
 }
 
-/* 4. Khối nền xám: Tạo chiều sâu và ép nội dung (input) ra giữa */
-.contact-form {
-    background: var(--bg-gray);
-    padding: 50px 30px; /* Thêm đệm 2 bên để trên điện thoại không sát mép */
-    border-radius: var(--radius);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Thêm bóng đổ nhẹ giúp form nổi bật khỏi nền trắng */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Trọng tâm: Gom các thẻ con ra giữa */
-}
-
-/* 5. Cấu trúc các ô nhập liệu */
 .form-group {
     width: 100%;
-    max-width: 500px; /* Ô điền chữ chỉ rộng tối đa 500px, phần còn lại là nền xám */
+    max-width: 600px;
     margin-bottom: 25px;
 }
-
-/* 6. Chữ tiêu đề trên mỗi ô nhập liệu (Họ tên, Email...) */
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 600; /* In đậm nhẹ chữ để dễ đọc hơn */
+    font-weight: 600;
     color: var(--text-dark);
-    text-align: left; /* Đảm bảo nhãn vẫn canh trái so với ô nhập */
+    text-align: left;
 }
-
-/* 7. Căn giữa và đồng bộ nút Gửi */
 .contact-form .btn {
     width: 100%;
     max-width: 500px;
     margin-top: 15px;
-    padding: 14px; /* Nút Gửi to ra một chút để click dễ hơn */
+    padding: 14px;
     font-size: 16px;
 }
+/* Cuisine and contact page polish */
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
 
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-links {
-        justify-content: center;
-    }
-    .newsletter-input {
-        flex-direction: column;
-    }
-    #back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 1.2rem;
-    }
-    .contact-hero h1,
-    .cuisine-hero h1,
-    .destinations-hero h1,
-    .festival-hero h1 {
-        font-size: 36px;
-    }
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
 
-    .cuisine-grid,
-    .destinations-grid,
-    .festival-timeline {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    .social-link,
-    .social-links-large {
-        flex-direction: column;
-    }
-    .social-link {
-        width: 100%;
-        justify-content: center;
-    }
+.section-heading h2,
+.food-tips-panel h2,
+.contact-panel h2 {
+  color: var(--text-dark);
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.section-heading p,
+.food-tips-panel p,
+.panel-desc {
+  color: var(--text-light);
+  font-size: 15px;
+}
+
+.cuisine-hero-pro,
+.contact-hero-pro {
+  overflow: hidden;
+  padding: 110px 20px 70px;
+  text-align: left;
+}
+
+.cuisine-hero-pro {
+  background:
+    linear-gradient(90deg, rgba(34, 30, 25, 0.88), rgba(34, 30, 25, 0.56)),
+    url("../images/Cuisine/cao-lau.jpeg") center/cover;
+}
+
+.contact-hero-pro {
+  background:
+    linear-gradient(90deg, rgba(7, 73, 82, 0.9), rgba(11, 122, 104, 0.72)),
+    url("../images/contacts/maps.jpg") center/cover;
+}
+
+.cuisine-hero-layout,
+.contact-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.cuisine-hero-copy,
+.contact-hero-layout > div:first-child {
+  max-width: 680px;
+}
+
+.cuisine-hero-pro .section-kicker,
+.contact-hero-pro .section-kicker {
+  color: var(--secondary-color);
+}
+
+.cuisine-hero-pro h1,
+.contact-hero-pro h1 {
+  font-size: 52px;
+  line-height: 1.12;
+  margin-bottom: 16px;
+}
+
+.cuisine-hero-pro p,
+.contact-hero-pro p {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-highlights span,
+.contact-hero-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.hero-highlights span {
+  padding: 10px 14px;
+}
+
+.cuisine-hero-image {
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+}
+
+.cuisine-hero-image img,
+.map-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cuisine-grid-pro {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cuisine-card-pro {
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.cuisine-card-pro:hover {
+  transform: translatey(-6px);
+}
+
+.cuisine-card-pro .card-image {
+  position: relative;
+}
+
+.food-tag {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #b94715;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.card-title-row h3 {
+  margin: 0;
+}
+
+.card-title-row span {
+  flex: 0 0 auto;
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cuisine-card-pro .card-meta {
+  padding-top: 14px;
+  border-top: 1px solid #eef0f2;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.food-tips-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+  gap: 30px;
+  margin-top: 46px;
+  padding: 28px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff8f1, #ffffff);
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.tips-list {
+  display: grid;
+  gap: 12px;
+  align-content: center;
+}
+
+.tips-list span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.tips-list i {
+  color: #16a085;
+}
+
+.contact-hero-card {
+  justify-self: end;
+  padding: 18px;
+  min-width: 300px;
+}
+.contact-hero-card i {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 24px;
+}
+
+.contact-hero-card span,
+.contact-hero-card strong {
+  display: block;
+}
+
+.contact-hero-card span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+}
+.contact-panel {
+  border: 1px solid #e8edf0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
+}
+.contact-container-pro {
+  gap: 28px;
+}
+.contact-panel {
+  padding: 28px;
+}
+
+.contact-form-pro {
+  padding: 0;
+  background: transparent;
+}
+/* Layout 2 cột cho trang Contact */
+.contact-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Danh sách link Google Maps */
+.map-location-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: grid;
+    gap: 12px;
+}
+.location-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--bg-gray);
+    border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 15px;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+.location-link:hover {
+    background: #fff;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.location-link i {
+    color: #e74c3c;
+    font-size: 18px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text-dark);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.3);
+}
+.contact-form-pro .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.map-card {
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.info-section-pro {
+  margin-bottom: 24px;
+}
+
+.info-section-pro h2 {
+  margin-bottom: 16px;
+}
+
+.support-hours {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.support-hours div {
+  padding: 14px;
+  border-radius: 8px;
+  background: var(--bg-gray);
+}
+
+.support-hours span,
+.support-hours strong {
+  display: block;
+}
+
+.support-hours span {
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+.support-hours strong {
+  color: var(--text-dark);
+  font-size: 15px;
+}
+
+.social-links-pro .social-link {
+  flex: 1;
+  border-radius: 8px;
 }

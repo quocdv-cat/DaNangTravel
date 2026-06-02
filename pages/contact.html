@@ -46,52 +46,110 @@
     </header>
 
     <main>
-        <section class="contact-hero">
-            <h1 data-i18n="contact_title">Liên Hệ</h1>
-            <p data-i18n="contact_desc">Hãy liên hệ với chúng tôi để có thông tin chi tiết và hỗ trợ</p>
+        <section class="contact-hero contact-hero-pro">
+            <div class="container contact-hero-layout">
+                <div>
+                    <span class="section-kicker" data-i18n="contact_kicker">Travel Support</span>
+                    <h1 data-i18n="contact_hero_title">Liên Hệ & Tiện Ích</h1>
+                    <p data-i18n="contact_hero_desc">Gửi yêu cầu hỗ trợ, xem bản đồ du lịch và lưu nhanh những thông tin cần thiết cho chuyến đi Đà Nẵng.</p>
+                </div>
+                <div class="contact-hero-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <div>
+                        <span data-i18n="tourist_support">Hỗ trợ du khách</span>
+                        <strong data-i18n="support_time">08:00 - 21:00 mỗi ngày</strong>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="contact-section container fade-in">
-            <div class="contact-container">
-                <!-- Contact Form -->
-                <div class="contact-form-wrapper">
-                    <h2 data-i18n="send_this_message">Gửi tin nhắn cho chúng tôi</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" data-i18n="name">Họ và tên</label>
-                            <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+            <div class="contact-container contact-two-cols">
+                <div class="contact-form-wrapper contact-panel">
+                    <span class="section-kicker" data-i18n="send_message_kicker">Gửi tin nhắn</span>
+                    <h3 data-i18n="contact_form_title">Chúng tôi có thể hỗ trợ gì cho bạn?</h3>
+                    <p class="panel-desc" data-i18n="contact_form_desc">Điền thông tin bên dưới, đội ngũ DaNangTravel sẽ phản hồi trong thời gian sớm nhất.</p>
+                    <form class="contact-form contact-form-pro" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-i18n="form_name">Họ và tên</label>
+                                <input type="text" id="name" name="name" required data-i18n-attr="placeholder" data-i18n="form_name_placeholder" placeholder="Nguyễn Văn A">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-i18n="form_phone">Điện thoại</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0900 000 000">
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="email" data-i18n="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                            <label for="email" data-i18n="form_email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
                         </div>
 
                         <div class="form-group">
-                            <label for="phone" data-i18n="phone">Điện thoại</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject" data-i18n="subject">Chủ đề</label>
-                            <select id="subject" name="subject" required>
-                                <option value="" data-i18n="option">-- Chọn chủ đề --</option>
-                                <option value="inquiry" data-i18n="inquiry">Thắc mắc</option>
-                                <option value="feedback" data-i18n="feedback">Góp ý</option>
-                                <option value="bug" data-i18n="bug">Báo cáo sự cố</option>
-                                <option value="booking" data-i18n="booking">Đặt tour</option>
-                                <option value="other" data-i18n="other">Khác</option>
+                            <label for="topic" data-i18n="form_topic">Chủ đề cần hỗ trợ</label>
+                            <select id="topic" name="topic">
+                                <option data-i18n="topic_1">Tư vấn lịch trình</option>
+                                <option data-i18n="topic_2">Ẩm thực và quán ăn</option>
+                                <option data-i18n="topic_3">Phương tiện di chuyển</option>
+                                <option data-i18n="topic_4">Góp ý dịch vụ</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="message" data-i18n="message">Tin nhắn</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Nhập tin nhắn"required></textarea>
+                            <label for="message" data-i18n="form_message">Tin nhắn</label>
+                            <textarea id="message" name="message" rows="5" required data-i18n-attr="placeholder" data-i18n="form_message_placeholder" placeholder="Bạn muốn hỏi thêm thông tin gì?"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary" data-i18n="send">Gửi</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-i18n="send_request">Gửi yêu cầu</span>
+                        </button>
                     </form>
                 </div>
+
+                <aside class="contact-info-wrapper contact-panel">
+                    <span class="section-kicker" data-i18n="send_message_kicker">Tiện ích</span>
+                    <div class="map-card">
+                        <img src="../images/contacts/maps.jpg" alt="Bản đồ du lịch Đà Nẵng">
+                    </div>
+
+                    <div class="info-section info-section-pro">
+                        <h3 data-i18n="map_locations_title">Định vị nhanh các địa điểm du lịch</h3>
+                        <ul class="map-location-list">
+                            <li>
+                                <a href="https://maps.app.goo.gl/3Q8mXf1k9R6JtF6k8" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_bana">Bà Nà Hills (Sun World)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/uXv4KXZ3H2wZ8rJ67" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_mykhe">Bãi biển Mỹ Khê</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/6j1R7PqT8VpW5kM28" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_dragonbridge">Cầu Rồng Đà Nẵng</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/B9Z2KxY7H4qL1wM59" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_marblemts">Ngũ Hành Sơn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/T4Y8PxW9K5qL2wN68" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_asiapark">Asia Park (Công viên Châu Á)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://maps.app.goo.gl/H5Z7PxR8K3qL4wP79" target="_blank" class="location-link">
+                                    <i class="fa-solid fa-location-dot"></i> <span data-i18n="loc_sontra">Bán đảo Sơn Trà (Chùa Linh Ứng)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>

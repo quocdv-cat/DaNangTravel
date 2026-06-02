@@ -46,105 +46,222 @@
     </header>
 
     <main>
-        <section class="cuisine-hero">
-            <h1 data-i18n="cuisine_title">Ẩm Thực Đà Nẵng</h1>
-            <div class="search-box">
-                <input type="text" id="searchInput" class="search-input" data-i18n="search_placeholder_cuisine" placeholder="Tìm kiếm món ăn...">
-                <i class="fa-solid fa-search"></i>
+        <section class="cuisine-hero cuisine-hero-pro">
+            <div class="container cuisine-hero-layout">
+                <div class="cuisine-hero-copy">
+                    <span class="section-kicker" data-i18n="taste_central">Taste of Central Vietnam</span>
+                    <h1 data-i18n="danang_cuisine">Ẩm Thực Đà Nẵng</h1>
+                    <p data-i18n="danang_cuisine_desc">Khám phá những món ăn đậm vị miền Trung, từ tô mì Quảng thơm nghệ đến ổ bánh mì giòn nóng giữa lòng thành phố biển.</p>
+                    <div class="hero-highlights">
+                        <span data-i18n="highlight_6_dishes"><i class="fa-solid fa-bowl-food"></i> 6 món nổi bật</span>
+                        <span data-i18n="local_recommend"><i class="fa-solid fa-location-dot"></i> Gợi ý địa phương</span>
+                    </div>
+                </div>
+                <div class="cuisine-hero-image">
+                    <img src="../images/Cuisine/mi-quang.jpg" alt="Mì Quảng Đà Nẵng">
+                </div>
             </div>
-            <p data-i18n="cuisine_desc">Khám phá những món ăn ngon nhất từ miền Trung Việt Nam</p>
         </section>
 
         <section class="cuisine-section container fade-in">
-            <div class="cuisine-grid">
-                <!-- Cao Lau -->
-                <div class="cuisine-card">
-                    <div class="card-image">
-                        <img src="../images/cuisine/cao-lau.jpeg" alt="Cao Lau" class="gallery-img">
-                    </div>
-                    <div class="card-content">
-                        <h3 data-i18n="cao_lau">Cao Lầu</h3>
-                        <p data-i18n="cao_lau_desc">Một trong những đặc sản phổ biến nhất của Quảng Nam với bánh sợi mềm, phần thịt heo ngọt lịm.</p>
-                        <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.8/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Quảng Nam</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-heading">
+                <span class="section-kicker" data-i18n="must_try">Món ngon nên thử</span>
+                <h2 data-i18n="fav_specialties">Danh sách đặc sản được yêu thích</h2>
+                <p data-i18n="fav_specialties_desc">Mỗi món được chọn theo hương vị đặc trưng, mức độ phổ biến và trải nghiệm phù hợp với khách du lịch khi đến Đà Nẵng.</p>
+            </div>
 
-                <!-- Banh Mi -->
-                <div class="cuisine-card">
+            <div class="cuisine-grid cuisine-grid-pro">
+                <article class="cuisine-card cuisine-card-pro">
                     <div class="card-image">
-                        <img src="../images/cuisine/banh-mi.jpg" alt="Banh Mi" class="gallery-img">
+                        <img src="../images/Cuisine/cao-lau.jpeg" alt="Cao Lầu">
+                        <span class="food-tag" data-i18n="quang_nam">Quảng Nam</span>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="banh_my">Bánh Mỳ Đà Nẵng</h3>
-                        <p data-i18n="banh_my_desc">Bánh mỳ Việt Nam với các thành phần tươi ngon: chả lụa, pâté, dưa chuột, hành.</p>
+                        <div class="card-title-row">
+                            <h3 data-i18n="cao_lau">Cao Lầu</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p data-i18n="cao_lau_detail">Sợi mì dai, thịt heo rim đậm vị, rau sống tươi và nước sốt ít nhưng thơm, rất hợp cho bữa trưa nhẹ.</p>
                         <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.7/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Đà Nẵng</span>
+                            <span data-i18n="lunch_dinner"><i class="fa-solid fa-clock"></i> Trưa - tối</span>
+                            <span data-i18n="price_35_60"><i class="fa-solid fa-wallet"></i> 35k - 60k</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Shrimp Cake -->
-                <div class="cuisine-card">
+                <article class="cuisine-card cuisine-card-pro">
                     <div class="card-image">
-                        <img src="../images/cuisine/banh-tom.jpg" alt="Shrimp Cake" class="gallery-img">
+                        <img src="../images/Cuisine/banh-mi.jpg" alt="Bánh mì Đà Nẵng">
+                        <span class="food-tag" data-i18n="fast_food">Ăn nhanh</span>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="shrimp_cake">Bánh Tôm</h3>
-                        <p data-i18n="shrimp_cake_desc">Bánh chiên giòn với tôm và khoai lang, là đặc sản của các thị xã miền Trung.</p>
+                        <div class="card-title-row">
+                            <h3 data-i18n="banh_mi">Bánh Mì Đà Nẵng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p data-i18n="banh_mi_detail">Vỏ bánh giòn, nhân chả, pate, đồ chua và rau thơm cân bằng, tiện mang theo khi đi biển hoặc tham quan.</p>
                         <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.6/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Miền Trung</span>
+                            <span data-i18n="all_day"><i class="fa-solid fa-clock"></i> Cả ngày</span>
+                            <span data-i18n="price_20_35"><i class="fa-solid fa-wallet"></i> 20k - 35k</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Pho -->
-                <div class="cuisine-card">
+                <article class="cuisine-card cuisine-card-pro">
                     <div class="card-image">
-                        <img src="../images/cuisine/pho_da_nang.jpg" alt="Pho" class="gallery-img">
+                        <img src="../images/Cuisine/banh-tom.jpg" alt="Bánh tôm">
+                        <span class="food-tag" data-i18n="snack">Ăn vặt</span>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="pho">Phở Đà Nẵng</h3>
-                        <p data-i18n="pho_desc">Phở nướng đặc trưng với hương vị đặc biệt, có nguyên liệu là nước dùng thơm từ xương.</p>
+                        <div class="card-title-row">
+                            <h3 data-i18n="shrimp_cake">Bánh Tôm</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                        <p data-i18n="shrimp_cake_detail">Lớp bánh chiên vàng giòn với tôm và khoai, ăn cùng rau sống và nước chấm chua ngọt rất bắt vị.</p>
                         <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.9/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Đà Nẵng</span>
+                            <span data-i18n="afternoon_dinner"><i class="fa-solid fa-clock"></i> Chiều - tối</span>
+                            <span data-i18n="price_25_45"><i class="fa-solid fa-wallet"></i> 25k - 45k</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Fish Cake -->
-                <div class="cuisine-card">
+                <article class="cuisine-card cuisine-card-pro">
                     <div class="card-image">
-                        <img src="../images/cuisine/cha-ca.jpg" alt="Fish Cake" class="gallery-img">
+                        <img src="../images/Cuisine/pho_da_nang.jpg" alt="Phở Đà Nẵng">
+                        <span class="food-tag" data-i18n="breakfast">Bữa sáng</span>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="fish_cake">Chả Cá Đà Nẵng</h3>
-                        <p data-i18n="fish_cake_desc">Chả cá được làm từ cá tươi, được chiên vàng giòn và ăn kèm với nước mắm chua ngọt.</p>
+                        <div class="card-title-row">
+                            <h3 data-i18n="pho">Phở Đà Nẵng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p data-i18n="pho_detail">Nước dùng nóng, thơm vị xương hầm, bánh phở mềm và thịt thái mỏng, phù hợp để bắt đầu một ngày khám phá.</p>
                         <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.7/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Đà Nẵng</span>
+                            <span data-i18n="morning"><i class="fa-solid fa-clock"></i> Sáng</span>
+                            <span data-i18n="price_40_70"><i class="fa-solid fa-wallet"></i> 40k - 70k</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Banh Hoai -->
-                <div class="cuisine-card">
+                <article class="cuisine-card cuisine-card-pro">
                     <div class="card-image">
-                        <img src="../images/cuisine/mi-quang.jpg" alt="Mi Quang" class="gallery-img">
+                        <img src="../images/Cuisine/cha-ca.jpg" alt="Chả cá Đà Nẵng">
+                        <span class="food-tag" data-i18n="seafood">Hải sản</span>
                     </div>
                     <div class="card-content">
-                        <h3 data-i18n="mi_quang">Mì Quảng</h3>
-                        <p data-i18n="mi_quang_desc">Mì Quảng là món ăn đặc sản của Hội An, với hương vị thơm ngon và cách chế biến độc đáo.</p>
+                        <div class="card-title-row">
+                            <h3 data-i18n="fish_cake">Chả Cá Đà Nẵng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p data-i18n="fish_cake_detail">Chả cá làm từ cá tươi, chiên vàng thơm, có thể ăn kèm bún, bánh mì hoặc nước mắm chua ngọt.</p>
                         <div class="card-meta">
-                            <span><i class="fa-solid fa-star"></i> 4.8/5</span>
-                            <span><i class="fa-solid fa-utensils"></i> Hội An</span>
+                            <span data-i18n="lunch_dinner"><i class="fa-solid fa-clock"></i> Trưa - tối</span>
+                            <span data-i18n="price_35_65"><i class="fa-solid fa-wallet"></i> 35k - 65k</span>
                         </div>
                     </div>
+                </article>
+
+                <article class="cuisine-card cuisine-card-pro cuisine-feature-card">
+                    <div class="card-image">
+                        <img src="../images/Cuisine/mi-quang.jpg" alt="Mì Quảng">
+                        <span class="food-tag" data-i18n="specialty">Đặc sản</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3 data-i18n="mi_quang">Mì Quảng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p data-i18n="mi_quang_detail">Món ăn biểu tượng của miền Trung với sợi mì vàng nghệ, tôm thịt, bánh tráng mè và nước dùng sánh đậm.</p>
+                        <div class="card-meta">
+                            <span data-i18n="all_day"><i class="fa-solid fa-clock"></i> Cả ngày</span>
+                            <span data-i18n="price_30_60"><i class="fa-solid fa-wallet"></i> 30k - 60k</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cuisine-card cuisine-card-pro">
+                    <div class="card-image">
+                        <img src="../images/Cuisine/banh-trang-cuon-thit-heo.jpg" alt="Bánh tráng cuốn thịt heo">
+                        <span class="food-tag" data-i18n="roll">Cuốn</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3 data-i18n="pork_roll">Bánh Tráng Cuốn Thịt Heo</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p data-i18n="pork_roll_detail">Thịt heo hai đầu da, rau sống tươi, bánh tráng mềm và mắm nêm đậm vị tạo nên món cuốn rất đặc trưng Đà Nẵng.</p>
+                        <div class="card-meta">
+                            <span data-i18n="lunch_dinner"><i class="fa-solid fa-clock"></i> Trưa - tối</span>
+                            <span data-i18n="price_70_120"><i class="fa-solid fa-wallet"></i> 70k - 120k</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cuisine-card cuisine-card-pro">
+                    <div class="card-image">
+                        <img src="../images/Cuisine/hai-san-da-nang.jpg" alt="Hải sản Đà Nẵng">
+                        <span class="food-tag" data-i18n="coastal">Ven biển</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3 data-i18n="danang_seafood">Hải Sản Đà Nẵng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p data-i18n="danang_seafood_detail">Tôm, cua, ghẹ, ốc và mực tươi được chế biến nhanh, phù hợp cho bữa tối khi đi dạo khu biển Mỹ Khê.</p>
+                        <div class="card-meta">
+                            <span data-i18n="dinner"><i class="fa-solid fa-clock"></i> Tối</span>
+                            <span data-i18n="by_dish"><i class="fa-solid fa-wallet"></i> Theo món</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cuisine-card cuisine-card-pro">
+                    <div class="card-image">
+                        <img src="../images/Cuisine/che-lien-da-nang.jpeg" alt="Chè Liên Đà Nẵng">
+                        <span class="food-tag" data-i18n="dessert">Tráng miệng</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3 data-i18n="che_lien">Chè Liên</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p data-i18n="che_lien_detail">Chè sầu riêng béo thơm, mát lạnh, hợp để kết thúc một ngày tham quan hoặc dùng như món ăn vặt buổi tối.</p>
+                        <div class="card-meta">
+                            <span data-i18n="afternoon_dinner"><i class="fa-solid fa-clock"></i> Chiều - tối</span>
+                            <span data-i18n="price_25_45"><i class="fa-solid fa-wallet"></i> 25k - 45k</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cuisine-card cuisine-card-pro">
+                    <div class="card-image">
+                        <img src="../images/Cuisine/cha-bo-da-nang.jpg" alt="Chả bò Đà Nẵng">
+                        <span class="food-tag" data-i18n="souvenir">Quà mua về</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-row">
+                            <h3 data-i18n="cha_bo">Chả Bò Đà Nẵng</h3>
+                            <span><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                        <p data-i18n="cha_bo_detail">Chả bò thơm tiêu, dai nhẹ và dễ bảo quản, thường được du khách chọn làm quà sau chuyến đi.</p>
+                        <div class="card-meta">
+                            <span data-i18n="buy_day"><i class="fa-solid fa-clock"></i> Mua trong ngày</span>
+                            <span data-i18n="by_kg"><i class="fa-solid fa-wallet"></i> Theo kg</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="food-tips-panel">
+                <div>
+                    <span class="section-kicker" data-i18n="small_exp">Kinh nghiệm nhỏ</span>
+                    <h2 data-i18n="eat_better">Ăn ngon hơn khi đi đúng thời điểm</h2>
+                    <p data-i18n="eat_better_desc">Buổi sáng hợp với phở hoặc mì Quảng, buổi chiều nên thử các món ăn vặt, còn buổi tối là thời điểm tốt để khám phá các quán địa phương gần chợ và khu ven biển.</p>
+                </div>
+                <div class="tips-list">
+                    <span data-i18n="tip_crowd"><i class="fa-solid fa-check"></i> Ưu tiên quán đông khách địa phương</span>
+                    <span data-i18n="tip_price"><i class="fa-solid fa-check"></i> Hỏi giá trước khi gọi món hải sản</span>
+                    <span data-i18n="tip_cash"><i class="fa-solid fa-check"></i> Mang tiền mặt mệnh giá nhỏ</span>
                 </div>
             </div>
         </section>
@@ -185,12 +302,5 @@
     <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="../js/main.js"></script>
-
-    <div id="lightbox" class="lightbox hidden">
-        <span class="close-lightbox"><i class="fa-solid fa-xmark"></i></span>
-        <button class="prev-lightbox"><i class="fa-solid fa-chevron-left"></i></button>
-        <img id="lightbox-img" class="lightbox-content" src="" alt="Da Nang Travel">
-        <button class="next-lightbox"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
 </body>
 </html>
